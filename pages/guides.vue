@@ -23,7 +23,6 @@
     </v-row>
     <v-row justify="center" align="center">
       <v-col cols="10" sm="8">
-        <p>Need help? Learn more on <a href="/start">how to get started</a>.</p>
         <p>How does Floccus deal with your personal data? <a href="/privacy">Privacy Policy</a></p>
         <p>What are your rights when using floccus? <a href="/license">License</a></p>
       </v-col>
@@ -37,8 +36,14 @@ import installAndroid from '~/guides/install-android.md'
 import syncNcBookmarks from '~/guides/sync-nextcloud-bookmarks.md'
 import syncWebdav from '~/guides/sync-webdav.md'
 import syncGDrive from '~/guides/sync-googledrive.md'
+import strategies from '~/guides/strategies.md'
+import tabs from '~/guides/tabs.md'
+
 export default {
   name: 'DownloadPage',
+  head: {
+    title: 'Guides',
+  },
   data() {
     return {
       guides: [
@@ -66,6 +71,16 @@ export default {
           title: 'Sync via Google Drive',
           content: syncGDrive,
           show: false,
+        },
+        {
+          title: 'Choose a sync strategy',
+          content: strategies,
+          show: false,
+        },
+        {
+          title: 'Sync tabs',
+          content: tabs,
+          show: false,
         }
       ]
     }
@@ -77,5 +92,9 @@ img {
   width: 100%;
   max-width:700px;
   margin: 2em auto;
+}
+
+h1,h2,h3,h4 {
+  margin-top: 20px;
 }
 </style>

@@ -28,7 +28,7 @@
     </v-row>
     <v-row justify="center" align="center">
       <v-col cols="10" sm="8">
-        <p>Need help? Learn more on <a href="/start">how to get started</a>.</p>
+        <p>Need help? Learn more on <a href="/guides">how to get started</a>.</p>
         <p>How does Floccus deal with your personal data? <a href="/privacy">Privacy Policy</a></p>
         <p>What are your rights when using floccus? <a href="/license">License</a></p>
       </v-col>
@@ -39,5 +39,8 @@
 <script>
 export default {
   name: 'DownloadPage',
+  head: {
+    title: 'Download',
+  }
 }
 </script>

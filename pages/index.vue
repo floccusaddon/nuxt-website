@@ -5,13 +5,15 @@
         <v-col cols="6">
           <v-img src="undraw_in_sync.svg" />
         </v-col>
-        <v-col cols="6" class="flex-column d-flex justify-center">
-          <h2 class="headline">Sync bookmarks privately</h2>
-          <p class="subtitle-1">across browsers and devices</p>
-          <p class="mt-3">
-          <v-btn class="primary" href="/download">Download</v-btn>
-          <v-btn class="ml-2" href="/start">Get started</v-btn>
-          </p>
+        <v-col cols="6" class="flex-column d-flex justify-center align-center">
+          <div style="width: 75%">
+            <h2 class="headline">Sync bookmarks privately</h2>
+            <p class="subtitle-1">across browsers and devices</p>
+            <p class="mt-3">
+              <v-btn class="primary" href="/download">Download</v-btn>
+              <v-btn class="ml-2" href="/guides">Get started</v-btn>
+            </p>
+          </div>
         </v-col>
       </v-row>
       <v-row class="mt-12">
@@ -29,9 +31,9 @@
         </v-col>
         <v-col cols="6" class="flex-column d-flex justify-center">
           <h2 class="headline">Use your own skills to make floccus even better!</h2>
-          <h3 class="mt-2">Have a problem or an idea? <v-btn href="https://github.com/floccusAddon/floccus/issues">File an issue</v-btn></h3>
-          <h3 class="mt-2">Want write code for a new feature? <v-btn href="https://github.com/floccusAddon/floccus/pulls">Open a pull request</v-btn></h3>
-          <h3 class="mt-2">Your language is not available yet? <v-btn href="https://www.transifex.com/floccus/floccus/">Help translate</v-btn></h3>
+          <h3 class="mt-2 d-flex justify-space-between flex-wrap">Have a problem or an idea? <v-btn href="https://github.com/floccusAddon/floccus/issues">File an issue</v-btn></h3>
+          <h3 class="mt-2 d-flex justify-space-between flex-wrap">Want write code for a new feature? <v-btn href="https://github.com/floccusAddon/floccus/pulls">Open a pull request</v-btn></h3>
+          <h3 class="mt-2 d-flex justify-space-between flex-wrap">Your language is not available yet? <v-btn href="https://www.transifex.com/floccus/floccus/">Help translate</v-btn></h3>
 
         </v-col>
       </v-row>
@@ -53,9 +55,10 @@
 </template>
 
 <script>
-import nuxt from "nuxt";
-
 export default {
   name: 'IndexPage',
+  head: {
+    title: 'Private bookmarks sync',
+  }
 }
 </script>

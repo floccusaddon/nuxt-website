@@ -1,10 +1,10 @@
-Floccus supports unidirectional, one-way sync as well two-directional “merge” sync.
+Instead of syncing a local bookmarks folder, Floccus can optionally sync your open browser tabs.
 
-In merge mode, changes from your local browser are merged with changes from other browsers.
+1. Create a new account with the sync method of your choice
+2. In the account settings, select Tabs instead of a local folder to sync
 
-Sometimes you want to have one device as a main device and other devices only as listeners. For this scenario you can
-set the main device to upload & override and all others to download & override to override their changes with the changes
-from the main device.
+## Auto-push
+You can enable Auto-sync but set sync strategy to "upload & override". This will automatically push your currently open tabs to the server. Whenever you need the tabs on a different browser, or after a crash, you can click download & override once to get the tabs back.
 
-Occasionally you only want to temporarily override changes from other devices. For this you can use a one-time upload & override.
-In order to undo local changes you can do a one-time download & override to revert all your local changes with the latest server state.
+## Manual up- and download
+Auto-upload can sometimes cause surprises when you have it enabled on multiple devices or when an empty session is pushed after a browser crash, overriding the previously stored session. This is why you can also turn off auto-sync and up- and download your tabs manually, i.e. when you want to switch to a different device upload your open tabs once on device A and download once on device B – et voila, all your tabs are now on the new device.
