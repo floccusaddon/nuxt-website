@@ -23,8 +23,8 @@
     </v-row>
     <v-row justify="center" align="center">
       <v-col cols="10" sm="8">
-        <p>How does Floccus deal with your personal data? <a href="/privacy">Privacy Policy</a></p>
-        <p>What are your rights when using floccus? <a href="/license">License</a></p>
+        <p>How does Floccus deal with your personal data? <NuxtLink to="/privacy">Privacy Policy</NuxtLink></p>
+        <p>What are your rights when using floccus? <NuxtLink to="/license">License</NuxtLink></p>
       </v-col>
     </v-row>
   </div>

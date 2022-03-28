@@ -10,8 +10,8 @@
             <h2 class="headline">Sync bookmarks privately</h2>
             <p class="subtitle-1">across browsers and devices</p>
             <p class="mt-3">
-              <v-btn class="primary" href="/download">Download</v-btn>
-              <v-btn class="ml-2" href="/guides">Get started</v-btn>
+              <v-btn class="primary" :to="{name: 'download'}">Download</v-btn>
+              <v-btn class="ml-2" :to="{name: 'guides'}">Get started</v-btn>
             </p>
           </div>
         </v-col>

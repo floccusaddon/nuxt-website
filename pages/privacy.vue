@@ -28,7 +28,7 @@
     </v-row>
     <v-row justify="center" align="center">
       <v-col cols="10" sm="8" class="d-flex flex-wrap">
-        <p>Need help? Learn more on <a href="/guides">how to get started</a>.</p>
+        <p>Need help? Learn more on <NuxtLink to="/guides">how to get started</NuxtLink>.</p>
       </v-col>
     </v-row>
   </div>
