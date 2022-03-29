@@ -11,6 +11,39 @@
         <Nuxt />
       </v-container>
     </v-main>
+    <v-footer
+      dark
+      padless
+      class="primary lighten-1 d-flex flex-column"
+    >
+      <v-card
+        flat
+        tile
+        class="primary lighten-1 white--text text-center"
+      >
+        <v-card-text>
+          <v-btn
+            v-for="icon in icons"
+            :key="icon"
+            class="mx-4 white--text"
+            icon
+            :href="icon.href"
+          >
+            <v-icon size="24px">
+              {{ icon.icon }}
+            </v-icon>
+          </v-btn>
+        </v-card-text>
+
+        <v-card-text class="white--text pt-0"></v-card-text>
+
+        <v-divider></v-divider>
+
+        <v-card-text class="white--text">
+          {{ new Date().getFullYear() }} — <strong>floccus</strong>
+        </v-card-text>
+      </v-card>
+    </v-footer>
   </v-app>
 </template>
 
@@ -20,6 +53,11 @@ export default {
   data() {
     return {
       title: 'floccus',
+      icons: [
+        {icon:'mdi-twitter', href:"https://twitter.com/floccusAddon"},
+        {icon:'mdi-github', href: 'https://github.com/floccusAddon'},
+        {icon:'mdi-google-play', href: 'https://play.google.com/store/apps/details?id=org.handmadeideas.floccus'},
+      ],
     }
   },
 }
