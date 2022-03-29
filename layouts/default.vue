@@ -28,6 +28,7 @@
             class="mx-4 white--text"
             icon
             :href="icon.href"
+            target="_blank"
           >
             <v-icon size="24px">
               {{ icon.icon }}
