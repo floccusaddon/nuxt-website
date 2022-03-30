@@ -32,6 +32,18 @@
         </v-col>
       </v-row>
       <v-row class="mt-12">
+        <v-col cols="6" class="d-flex flex-column justify-center">
+          <v-card>
+            <Timeline id="floccusAddon" error-message="This tweet could not be loaded" source-type="profile" :options="{ tweetLimit: '1' }">
+              <v-card-text><a href="https://twitter.com/floccusAddon">Loading tweets</a></v-card-text>
+            </Timeline>
+          </v-card>
+        </v-col>
+        <v-col cols="6">
+          <v-img src="undraw_devices.svg" />
+        </v-col>
+      </v-row>
+      <v-row class="mt-12">
         <v-col cols="6">
           <v-img src="undraw_team.svg" />
         </v-col>
@@ -88,10 +100,18 @@
 </template>
 
 <script>
+import { Timeline } from 'vue-tweet-embed'
 export default {
   name: 'IndexPage',
+  components: {Timeline},
   head: {
     title: 'Private bookmarks sync',
   },
+  computed: {
+    twttr() {
+      // eslint-disable-next-line
+      return typeof twttr === 'undefined'? null : twttr
+    }
+  }
 }
 </script>
