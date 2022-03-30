@@ -3,18 +3,23 @@
     <v-row justify="center" align="center">
       <v-col cols="10" sm="8">
         <h1 class="headline">Guides</h1>
-        <div v-for="guide in guides"  class="mt-5" :key="guide.title">
+        <div v-for="guide in guides" :key="guide.title" class="mt-5">
           <v-card class="mb-5 mr-5" rounded>
-            <v-card-title style="cursor: pointer" @click="guide.show = !guide.show">{{guide.title}}
+            <v-card-title
+              style="cursor: pointer"
+              @click="guide.show = !guide.show"
+              >{{ guide.title }}
               <v-spacer></v-spacer>
               <v-btn icon>
-                <v-icon>{{ guide.show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+                <v-icon>{{
+                  guide.show ? 'mdi-chevron-up' : 'mdi-chevron-down'
+                }}</v-icon>
               </v-btn>
             </v-card-title>
             <v-expand-transition>
               <div v-show="guide.show">
-              <v-divider></v-divider>
-              <v-card-text v-html="guide.content" />
+                <v-divider></v-divider>
+                <v-card-text v-html="guide.content" />
               </div>
             </v-expand-transition>
           </v-card>
@@ -23,8 +28,14 @@
     </v-row>
     <v-row justify="center" align="center">
       <v-col cols="10" sm="8">
-        <p>How does Floccus deal with your personal data? <NuxtLink to="/privacy">Privacy Policy</NuxtLink></p>
-        <p>What are your rights when using floccus? <NuxtLink to="/license">License</NuxtLink></p>
+        <p>
+          How does Floccus deal with your personal data?
+          <NuxtLink to="/privacy">Privacy Policy</NuxtLink>
+        </p>
+        <p>
+          What are your rights when using floccus?
+          <NuxtLink to="/license">License</NuxtLink>
+        </p>
       </v-col>
     </v-row>
   </div>
@@ -41,9 +52,6 @@ import tabs from '~/guides/tabs.md'
 
 export default {
   name: 'DownloadPage',
-  head: {
-    title: 'Guides',
-  },
   data() {
     return {
       guides: [
@@ -81,20 +89,26 @@ export default {
           title: 'Sync tabs',
           content: tabs,
           show: false,
-        }
-      ]
+        },
+      ],
     }
-  }
+  },
+  head: {
+    title: 'Guides',
+  },
 }
 </script>
 <style>
 img {
   width: 100%;
-  max-width:700px;
+  max-width: 700px;
   margin: 2em auto;
 }
 
-h1,h2,h3,h4 {
+h1,
+h2,
+h3,
+h4 {
   margin-top: 20px;
 }
 </style>

@@ -1,26 +1,25 @@
 <template>
   <v-app>
     <v-app-bar fixed app flat>
-      <v-toolbar-title><v-btn text color="transparent" :to="{name: 'index'}"><v-img src="/logo.svg"/></v-btn> floccus</v-toolbar-title>
+      <v-toolbar-title
+        ><v-btn text color="transparent" :to="{ name: 'index' }"
+          ><v-img src="/logo.svg"
+        /></v-btn>
+        floccus</v-toolbar-title
+      >
       <v-spacer />
-      <v-btn text elevation="0" :to="{name: 'guides'}" class="ml-4 mr-4">Guides</v-btn>
-      <v-btn outlined text :to="{name: 'download'}">Download</v-btn>
+      <v-btn text elevation="0" :to="{ name: 'guides' }" class="ml-4 mr-4"
+        >Guides</v-btn
+      >
+      <v-btn outlined text :to="{ name: 'download' }">Download</v-btn>
     </v-app-bar>
     <v-main>
       <v-container>
         <Nuxt />
       </v-container>
     </v-main>
-    <v-footer
-      dark
-      padless
-      class="primary lighten-1 d-flex flex-column"
-    >
-      <v-card
-        flat
-        tile
-        class="primary lighten-1 white--text text-center"
-      >
+    <v-footer dark padless class="primary lighten-1 d-flex flex-column mt-10">
+      <v-card flat tile class="primary lighten-1 white--text text-center">
         <v-card-text>
           <v-btn
             v-for="icon in icons"
@@ -55,9 +54,12 @@ export default {
     return {
       title: 'floccus',
       icons: [
-        {icon:'mdi-twitter', href:"https://twitter.com/floccusAddon"},
-        {icon:'mdi-github', href: 'https://github.com/floccusAddon'},
-        {icon:'mdi-google-play', href: 'https://play.google.com/store/apps/details?id=org.handmadeideas.floccus'},
+        { icon: 'mdi-twitter', href: 'https://twitter.com/floccusAddon' },
+        { icon: 'mdi-github', href: 'https://github.com/floccusAddon' },
+        {
+          icon: 'mdi-google-play',
+          href: 'https://play.google.com/store/apps/details?id=org.handmadeideas.floccus',
+        },
       ],
     }
   },
