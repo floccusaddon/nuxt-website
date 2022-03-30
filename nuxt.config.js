@@ -38,9 +38,7 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-    '@nuxtjs/markdownit',
-  ],
+  modules: ['@nuxtjs/markdownit'],
 
   // [optional] markdownit options
   // See https://github.com/markdown-it/markdown-it
@@ -48,6 +46,7 @@ export default {
     preset: 'default',
     linkify: true,
     breaks: true,
+    runtime: true,
   },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
