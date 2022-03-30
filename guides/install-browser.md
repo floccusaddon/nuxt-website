@@ -1,8 +1,13 @@
+<img src="screen_firefox_account.png" class="float-lg-right" style="max-width: 100%; width: 450px; border: 1px solid grey;" />
+
+
 Floccus is known to work in Chrome, Firefox, Edge, Opera, Vivaldi, Brave and Kiwi. Click on one of the following links to install floccus in your browser.
 
 - [Chrome Webstore](https://chrome.google.com/webstore/detail/floccus/fnaicdffflnofjppbagibeoednhnbjhg) (also applies for Opera, Vivaldi, Brave and Kiwi)
 - [Mozilla Addons](https://addons.mozilla.org/en-US/firefox/addon/floccus/)
 - [Edge Addons](https://microsoftedge.microsoft.com/addons/detail/gjkddcofhiifldbllobcamllmanombji)
+
+<div style="clear: both"></div>
 
 Your browser will ask you to confirm installation, including the permissions necessary for running floccus. Floccus currently requires the following permissions:
 

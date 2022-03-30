@@ -19,7 +19,7 @@
             <v-expand-transition>
               <div v-show="guide.show">
                 <v-divider></v-divider>
-                <v-card-text v-html="guide.content" />
+                <v-card-text v-html="guide.content" class="clearfix"/>
               </div>
             </v-expand-transition>
           </v-card>
@@ -105,10 +105,20 @@ img {
   margin: 2em auto;
 }
 
+p {
+  margin-top: 10px;
+}
+
 h1,
 h2,
 h3,
 h4 {
   margin-top: 20px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 </style>
