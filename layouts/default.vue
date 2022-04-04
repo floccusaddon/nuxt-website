@@ -43,7 +43,8 @@
         <v-divider></v-divider>
 
         <v-card-text class="white--text">
-          {{ new Date().getFullYear() }} — <strong>floccus</strong>
+          <p>{{ new Date().getFullYear() }} — <strong>floccus</strong></p>
+          <p>Created by <a href="https://marcelklehr.de/" class="white--text">marcel klehr</a></p>
         </v-card-text>
       </v-card>
     </v-footer>
