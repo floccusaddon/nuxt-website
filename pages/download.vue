@@ -11,29 +11,39 @@
           <v-card-title
             ><v-icon size="50">mdi-firefox</v-icon> Firefox</v-card-title
           >
-          <v-card-text><v-btn class="primary">Download</v-btn></v-card-text>
+          <v-card-text><v-btn class="primary" href="https://addons.mozilla.org/en-US/firefox/addon/floccus/">Download</v-btn></v-card-text>
         </v-card>
         <v-card class="mb-5 mr-5" rounded>
           <v-card-title
             ><v-icon size="50">mdi-microsoft-edge</v-icon> Edge</v-card-title
           >
-          <v-card-text><v-btn class="primary">Download</v-btn></v-card-text>
+          <v-card-text><v-btn class="primary" href="https://microsoftedge.microsoft.com/addons/detail/gjkddcofhiifldbllobcamllmanombji">Download</v-btn></v-card-text>
         </v-card>
         <v-card class="mb-5 mr-5" rounded>
           <v-card-title
             ><v-icon size="50">mdi-google-chrome</v-icon> Chrome</v-card-title
           >
-          <v-card-text><v-btn class="primary">Download</v-btn></v-card-text>
+          <v-card-text><v-btn class="primary" href="https://chrome.google.com/webstore/detail/floccus/fnaicdffflnofjppbagibeoednhnbjhg">Download</v-btn></v-card-text>
         </v-card>
         <v-card class="mb-5 mr-5" rounded>
           <v-card-title
             ><v-icon size="50">mdi-android</v-icon> Android</v-card-title
           >
           <v-card-text class="d-flex flex-column"
-            ><v-btn class="primary">PlayStore</v-btn><br /><v-btn
-              class="primary mt-2"
+            ><v-btn class="primary" href="https://play.google.com/store/apps/details?id=org.handmadeideas.floccus">PlayStore</v-btn><br /><v-btn
+              class="primary mt-2" href="https://apt.izzysoft.de/fdroid/"
               >F-Droid</v-btn
             ></v-card-text
+          >
+        </v-card>
+        <v-card class="mb-5 mr-5" rounded>
+          <v-card-title
+          ><v-icon size="50">mdi-package-variant</v-icon> Sources</v-card-title
+          >
+          <v-card-text><v-btn
+            class="primary mt-2" href="https://github.com/floccusaddon/floccus/releases"
+          >GitHub</v-btn
+          ></v-card-text
           >
         </v-card>
       </v-col>
