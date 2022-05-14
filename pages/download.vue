@@ -31,7 +31,7 @@
           >
           <v-card-text class="d-flex flex-column"
             ><v-btn class="primary" href="https://play.google.com/store/apps/details?id=org.handmadeideas.floccus">PlayStore</v-btn><br /><v-btn
-              class="primary mt-2" href="https://apt.izzysoft.de/fdroid/"
+              class="primary mt-2" href="https://apt.izzysoft.de/fdroid/index/apk/org.handmadeideas.floccus"
               >F-Droid</v-btn
             ></v-card-text
           >
