@@ -30,9 +30,12 @@
             ><v-icon size="50">mdi-android</v-icon> Android</v-card-title
           >
           <v-card-text class="d-flex flex-column"
-            ><v-btn class="primary" href="https://play.google.com/store/apps/details?id=org.handmadeideas.floccus">PlayStore</v-btn><br /><v-btn
-              class="primary mt-2" href="https://apt.izzysoft.de/fdroid/index/apk/org.handmadeideas.floccus"
+            ><v-btn class="primary" href="https://play.google.com/store/apps/details?id=org.handmadeideas.floccus">Google Play</v-btn><br /><v-btn
+              class="primary mt-2" href="https://f-droid.org/en/packages/org.handmadeideas.floccus/"
               >F-Droid</v-btn
+            ><v-btn
+              class="primary mt-2" href="https://apt.izzysoft.de/fdroid/index/apk/org.handmadeideas.floccus"
+              >Izzy On Droid</v-btn
             ></v-card-text
           >
         </v-card>
