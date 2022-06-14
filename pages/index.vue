@@ -19,7 +19,7 @@
       <v-row class="mt-12 d-block d-sm-flex">
         <v-col class="col-12 col-sm-6 flex-column d-flex justify-center">
           <h2 class="headline">
-            Browser Extensions & Android App that sync your bookmarks across all
+            Browser Extensions, iOS & Android Apps that sync your bookmarks across all
             your browsers and devices
           </h2>
           <p class="subtitle-1">

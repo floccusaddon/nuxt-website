@@ -41,6 +41,15 @@
         </v-card>
         <v-card class="mb-5 mr-5" rounded>
           <v-card-title
+            ><v-icon size="50">mdi-apple</v-icon> iOS</v-card-title
+          >
+          <v-card-text class="d-flex flex-column"
+            ><v-btn class="primary" href="https://apps.apple.com/us/app/floccus/id1626998357">App Store</v-btn>
+          </v-card-text
+          >
+        </v-card>
+        <v-card class="mb-5 mr-5" rounded>
+          <v-card-title
           ><v-icon size="50">mdi-package-variant</v-icon> Sources</v-card-title
           >
           <v-card-text><v-btn
