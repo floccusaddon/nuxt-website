@@ -4,7 +4,7 @@ Floccus for Android is in an Open Beta phase and is available from
 
 - [Google Play](https://play.google.com/store/apps/details?id=org.handmadeideas.floccus)
 - [IzzyOnDroid F-Droid Repository](https://apt.izzysoft.de/fdroid/)
-- F-Droid (pending)
+- [F-Droid](https://f-droid.org/en/packages/org.handmadeideas.floccus/)
 
 Like Floccus in the browser, Floccus for Android allows you to create and manage multiple accounts
 For techincal reasons, the App does not sync your bookmarks with your mobile browsers,
