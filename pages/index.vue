@@ -106,6 +106,9 @@
             <v-btn href="https://www.paypal.me/marcelklehr1" class="mt-2 mr-2  col-lg-5"
               >PayPal</v-btn
             >
+            <v-btn href="https://www.patreon.com/marcelklehr" class="mt-2 mr-2  col-lg-5"
+              >Patreon</v-btn
+            >
           </div>
         </v-col>
         <v-col class="col-12 col-sm-6">
