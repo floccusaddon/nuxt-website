@@ -19,12 +19,27 @@
       <v-row class="mt-12 d-block d-sm-flex">
         <v-col class="col-12 col-sm-6 flex-column d-flex justify-center">
           <h2 class="headline">
-            Browser Extensions, iOS & Android Apps that sync your bookmarks across all
-            your browsers and devices
+            Apps for Browsers, iOS & Android that sync your bookmarks
           </h2>
           <p class="subtitle-1">
-            Via an optionally selfhosted Nextcloud or WebDAV server or
-            optionally end-to-end encrypted via Google Drive
+            Via a
+            <v-tooltip bottom :max-width="250">
+              <template #activator="{on, attrs}">
+                <span v-on="on" v-bind="attrs"><a href="https://nextcloud.com">Nextcloud</a><v-icon dense>mdi-help-circle-outline</v-icon></span>
+              </template>
+              <span>Nextcloud is an Open Source collaboration platform that you can self-host or rent as a Service in the cloud. It features a beautiful Bookmarks app that seemlessly integrates with floccus.</span>
+            </v-tooltip>
+              or <v-tooltip bottom :max-width="250">
+            <template #activator="{on, attrs}">
+              <span v-on="on" v-bind="attrs"><a href="https://en.wikipedia.org/wiki/WebDAV">WebDAV</a><v-icon dense>mdi-help-circle-outline</v-icon></span>
+            </template>
+            <span>WebDAV is an open protocol that allows users to create, change and move documents on a server. Many cloud storage providers support using WebDAV to access files. You can also easily host your own WebDAV share.</span>
+          </v-tooltip> server for easy self-hosting or simply via <v-tooltip bottom :max-width="250">
+            <template #activator="{on, attrs}">
+              <span v-on="on" v-bind="attrs"><a href="https://drive.google.com">Google Drive</a><v-icon dense>mdi-help-circle-outline</v-icon></span>
+            </template>
+            <span>Almost everyone has a Google account, so using Google Drive to sync bookmarks is the simplest option. If you want to keep things private, floccus has you covered with end-to-end encryption.</span>
+          </v-tooltip>.
           </p>
         </v-col>
         <v-col class="col-12 col-sm-6">
@@ -52,13 +67,13 @@
             Use your own skills to make floccus even better!
           </h2>
           <h3 class="mt-2 d-flex justify-space-between flex-wrap">
-            Have a problem or an idea?
+            Have a problem or a new idea?
             <v-btn href="https://github.com/floccusAddon/floccus/issues"
               >File an issue</v-btn
             >
           </h3>
           <h3 class="mt-2 d-flex justify-space-between flex-wrap">
-            Want write code for a new feature?
+            Want to write code for a new feature?
             <v-btn href="https://github.com/floccusAddon/floccus/pulls"
               >Open a pull request</v-btn
             >
