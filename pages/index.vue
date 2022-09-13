@@ -98,7 +98,7 @@
               >GitHub Sponsors</v-btn
             >
             <v-btn href="https://liberapay.com/marcelklehr/donate" class="mt-2 mr-2  col-lg-5"
-              >Liberpay</v-btn
+              >Liberapay</v-btn
             >
             <v-btn href="https://opencollective.com/floccus" class="mt-2 mr-2  col-lg-5"
               >OpenCollective</v-btn
