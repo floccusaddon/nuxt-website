@@ -33,9 +33,6 @@
             ><v-btn class="primary" href="https://play.google.com/store/apps/details?id=org.handmadeideas.floccus">Google Play</v-btn><br /><v-btn
               class="primary mt-2" href="https://f-droid.org/en/packages/org.handmadeideas.floccus/"
               >F-Droid</v-btn
-            ><v-btn
-              class="primary mt-2" href="https://apt.izzysoft.de/fdroid/index/apk/org.handmadeideas.floccus"
-              >Izzy On Droid</v-btn
             ></v-card-text
           >
         </v-card>
