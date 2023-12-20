@@ -24,23 +24,11 @@
     </v-row>
     <v-row justify="center" align="center">
       <v-col cols="10" md="8" class="d-flex flex-wrap">
-        <div class="d-flex flex-wrap flex-column flex-lg-row">
-          <v-btn href="https://github.com/sponsors/marcelklehr" class="mt-2 mr-2 col-lg-5"
-          >GitHub Sponsors</v-btn
-          >
-          <v-btn href="https://liberapay.com/marcelklehr/donate" class="mt-2 mr-2  col-lg-5"
-          >Liberapay</v-btn
-          >
-          <v-btn href="https://opencollective.com/floccus" class="mt-2 mr-2  col-lg-5"
-          >OpenCollective</v-btn
-          >
-          <v-btn href="https://www.paypal.me/marcelklehr1" class="mt-2 mr-2  col-lg-5"
-          >PayPal</v-btn
-          >
-          <v-btn href="https://www.patreon.com/marcelklehr" class="mt-2 mr-2  col-lg-5"
-          >Patreon</v-btn
-          >
-        </div>
+        <v-btn href="https://github.com/sponsors/marcelklehr" class="mt-2 mr-2 col-lg-5">GitHub Sponsors</v-btn>
+        <v-btn href="https://liberapay.com/marcelklehr/donate" class="mt-2 mr-2 col-lg-5">Liberapay</v-btn>
+        <v-btn href="https://opencollective.com/floccus" class="mt-2 mr-2 col-lg-5">OpenCollective</v-btn>
+        <v-btn href="https://www.paypal.me/marcelklehr1" class="mt-2 mr-2 col-lg-5">PayPal</v-btn>
+        <v-btn href="https://www.patreon.com/marcelklehr" class="mt-2 mr-2 col-lg-5">Patreon</v-btn>
       </v-col>
     </v-row>
     <v-row justify="center" align="center" class="mt-9">
@@ -51,15 +39,13 @@
     </v-row>
     <v-row justify="center" align="center">
       <v-col cols="10" md="8" class="d-flex flex-wrap">
-        <div class="d-flex flex-wrap flex-column flex-lg-row">
-          <v-btn href="https://play.google.com/store/apps/details?id=org.handmadeideas.floccus" class="mt-2 mr-2 col-lg-5">Google Play</v-btn>
-          <v-btn href="https://apps.apple.com/us/app/floccus/id1626998357" class="mt-2 mr-2  col-lg-5">Apple App Store</v-btn>
-          <v-btn href="https://alternativeto.net/software/floccus/about/" class="mt-2 mr-2  col-lg-5">AlternativeTo</v-btn>
-          <v-btn href="https://addons.mozilla.org/de/firefox/addon/floccus/reviews/" class="mt-2 mr-2  col-lg-5">Firefox ADDONs</v-btn>
-          <v-btn href="https://chromewebstore.google.com/detail/floccus-bookmarks-sync/fnaicdffflnofjppbagibeoednhnbjhg" class="mt-2 mr-2  col-lg-5">Chrome Webstore</v-btn>
-          <v-btn href="https://www.producthunt.com/products/floccus" class="mt-2 mr-2  col-lg-5">Product Hunt</v-btn>
-          <v-btn href="https://www.slant.co/topics/12038/viewpoints/9/~cross-platform-cross-browser-bookmark-sync-solutions~floccus" class="mt-2 mr-2  col-lg-5">Slant</v-btn>
-        </div>
+        <v-btn href="https://play.google.com/store/apps/details?id=org.handmadeideas.floccus" class="mt-2 mr-2 col-lg-5">Google Play</v-btn>
+        <v-btn href="https://apps.apple.com/us/app/floccus/id1626998357" class="mt-2 mr-2 col-lg-5">Apple App Store</v-btn>
+        <v-btn href="https://alternativeto.net/software/floccus/about/" class="mt-2 mr-2 col-lg-5">AlternativeTo</v-btn>
+        <v-btn href="https://addons.mozilla.org/de/firefox/addon/floccus/reviews/" class="mt-2 mr-2 col-lg-5">Firefox Addons</v-btn>
+        <v-btn href="https://chromewebstore.google.com/detail/floccus-bookmarks-sync/fnaicdffflnofjppbagibeoednhnbjhg" class="mt-2 mr-2 col-lg-5">Chrome Webstore</v-btn>
+        <v-btn href="https://www.producthunt.com/products/floccus" class="mt-2 mr-2 col-lg-5">Product Hunt</v-btn>
+        <v-btn href="https://www.slant.co/topics/12038/viewpoints/9/~cross-platform-cross-browser-bookmark-sync-solutions~floccus" class="mt-2 mr-2 col-lg-5">Slant</v-btn>
       </v-col>
     </v-row>
   </div>
