@@ -60,6 +60,20 @@
         </v-col>
       </v-row>
       <v-row class="mt-12 d-block d-sm-flex">
+        <v-col class="col-12 col-sm-6 flex-column d-flex justify-center">
+          <h2 class="headline">Support floccus</h2>
+          <p class="subtitle-1">
+            Floccus is made possible by volunteers, especially by its creator Marcel Klehr who spends his free time making floccus better, bit by bit.
+          </p>
+          <p>
+            <v-btn href="/donate">Give something back</v-btn>
+          </p>
+        </v-col>
+        <v-col class="col-12 col-sm-6">
+          <v-img src="undraw_love.svg" />
+        </v-col>
+      </v-row>
+      <v-row class="mt-12 d-block d-sm-flex">
         <v-col class="col-12 col-sm-6 ">
           <v-img src="undraw_team.svg" />
         </v-col>
@@ -70,50 +84,21 @@
           <h3 class="mt-2 d-flex justify-space-between flex-wrap">
             Have a problem or a new idea?
             <v-btn href="https://github.com/floccusAddon/floccus/issues"
-              >File an issue</v-btn
+            >File an issue</v-btn
             >
           </h3>
           <h3 class="mt-2 d-flex justify-space-between flex-wrap">
             Want to write code for a new feature?
             <v-btn href="https://github.com/floccusAddon/floccus/pulls"
-              >Open a pull request</v-btn
+            >Open a pull request</v-btn
             >
           </h3>
           <h3 class="mt-2 d-flex justify-space-between flex-wrap">
             Your language is not available yet?
             <v-btn href="https://www.transifex.com/floccus/floccus/"
-              >Help translate</v-btn
+            >Help translate</v-btn
             >
           </h3>
-        </v-col>
-      </v-row>
-      <v-row class="mt-12 d-block d-sm-flex">
-        <v-col class="col-12 col-sm-6 flex-column d-flex justify-center">
-          <h2 class="headline">Support floccus</h2>
-          <p class="subtitle-1">
-            Give something back to the creator of floccus. Any amount, no matter
-            how small, is appreciated.
-          </p>
-          <div class="d-flex flex-wrap flex-column flex-lg-row">
-            <v-btn href="https://github.com/sponsors/marcelklehr" class="mt-2 mr-2 col-lg-5"
-              >GitHub Sponsors</v-btn
-            >
-            <v-btn href="https://liberapay.com/marcelklehr/donate" class="mt-2 mr-2  col-lg-5"
-              >Liberapay</v-btn
-            >
-            <v-btn href="https://opencollective.com/floccus" class="mt-2 mr-2  col-lg-5"
-              >OpenCollective</v-btn
-            >
-            <v-btn href="https://www.paypal.me/marcelklehr1" class="mt-2 mr-2  col-lg-5"
-              >PayPal</v-btn
-            >
-            <v-btn href="https://www.patreon.com/marcelklehr" class="mt-2 mr-2  col-lg-5"
-              >Patreon</v-btn
-            >
-          </div>
-        </v-col>
-        <v-col class="col-12 col-sm-6">
-          <v-img src="undraw_love.svg" />
         </v-col>
       </v-row>
     </v-col>
