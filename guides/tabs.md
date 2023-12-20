@@ -1,7 +1,7 @@
 Instead of syncing a local bookmarks folder, Floccus can optionally sync your open browser tabs.
 
-1. Create a new account with the sync method of your choice
-2. In the account settings, select Tabs instead of a local folder to sync
+1. Create a new profile with the sync method of your choice
+2. In the profile settings, select Tabs instead of a local folder to sync
 
 ## Auto-push
 

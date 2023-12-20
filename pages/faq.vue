@@ -113,7 +113,7 @@ If you are missing some toplevel folders on a browser, try setting a different l
         },
         {
           question:
-            "Floccus suddenly won't stop syncing one of my accounts. What can I do?",
+            "Floccus suddenly won't stop syncing one of my profiles. What can I do?",
           answer: `Floccus employs a locking mechanism to avoid manipulating data on the server from two browsers at the same time. Sometimes, when closing a browser while floccus is syncing,
 this lock is not removed. On the next browser start floccus will then wait for the lock to be released and appear to be syncing for a long time without doing anything.
 
