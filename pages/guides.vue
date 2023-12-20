@@ -42,6 +42,7 @@
 </template>
 
 <script>
+import overview from '~/guides/overview.md'
 import install from '~/guides/install-browser.md'
 import installAndroid from '~/guides/install-android.md'
 import syncNcBookmarks from '~/guides/sync-nextcloud-bookmarks.md'
@@ -55,6 +56,11 @@ export default {
   data() {
     return {
       guides: [
+        {
+          title: 'How does it all work?',
+          content: overview,
+          show: true,
+        },
         {
           title: 'Install in your browser',
           content: install,

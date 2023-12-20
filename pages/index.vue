@@ -27,13 +27,13 @@
               <template #activator="{on, attrs}">
                 <span v-on="on" v-bind="attrs"><a href="https://nextcloud.com">Nextcloud</a><v-icon dense>mdi-help-circle-outline</v-icon></span>
               </template>
-              <span>Nextcloud is an Open Source collaboration platform that you can self-host or rent as a Service in the cloud. It features a beautiful Bookmarks app that seemlessly integrates with floccus.</span>
+              <span>Nextcloud is an Open Source collaboration platform that you can self-host on your own server or rent as a Service in the cloud. It features a beautiful Bookmarks app that seemlessly integrates with floccus.</span>
             </v-tooltip>
               or <v-tooltip bottom :max-width="250">
             <template #activator="{on, attrs}">
               <span v-on="on" v-bind="attrs"><a href="https://en.wikipedia.org/wiki/WebDAV">WebDAV</a><v-icon dense>mdi-help-circle-outline</v-icon></span>
             </template>
-            <span>WebDAV is an open protocol that allows users to create, change and move documents on a server. Many cloud storage providers support using WebDAV to access files. You can also easily host your own WebDAV share.</span>
+            <span>WebDAV is an open protocol that allows users to create, change and move documents on a server. Many cloud storage providers support using WebDAV to access files. You can also easily host your own WebDAV server.</span>
           </v-tooltip> server for easy self-hosting or simply via <v-tooltip bottom :max-width="250">
             <template #activator="{on, attrs}">
               <span v-on="on" v-bind="attrs"><a href="https://drive.google.com">Google Drive</a><v-icon dense>mdi-help-circle-outline</v-icon></span>
