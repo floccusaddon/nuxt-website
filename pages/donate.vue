@@ -13,7 +13,7 @@
         </p>
       </v-col>
       <v-col class="col-8 col-md-4">
-        <v-img src="undraw_love.svg" />
+        <v-img src="/undraw_love.svg" />
       </v-col>
     </v-row>
     <v-row justify="center" align="center" class="mt-9">
