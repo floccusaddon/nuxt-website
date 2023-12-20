@@ -58,6 +58,10 @@ export default {
 
 The only mobile browser to support extensions that interact with bookmarks is currently the free Kiwi browser.`,
         },
+        {
+          question: 'When will floccus be available for Firefox on Android?',
+          answer: `Firefox for Android is making strides to support more addons. Floccus requires specific bookmarks APIs, however, which have not been implemented in Firefox for Android yet. So, we still wait, but the waiting won't be long.`,
+        },
 
         {
           question: 'Does floccus support bookmarks tags in Firefox?',
