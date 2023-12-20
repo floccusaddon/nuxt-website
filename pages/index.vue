@@ -48,10 +48,11 @@
       </v-row>
       <v-row class="mt-12 d-block d-sm-flex">
         <v-col class="col-12 col-sm-6 d-flex flex-column justify-center">
-          <v-card style="min-height: 50%;">
-            <Timeline id="floccusAddon" error-message="This tweet could not be loaded" source-type="profile" :options="{ tweetLimit: '1' }">
-              <v-card-text><a href="https://twitter.com/floccusAddon">Loading tweets</a></v-card-text>
-            </Timeline>
+          <v-card style="min-height: 50%">
+            <v-card-title>Floccus on Mastodon</v-card-title>
+            <v-card-text v-for="(post,i) in posts.slice(0, 1)" v-html="post" :key="i" style="font-size: 1.2em !important" />
+            <span v-if="posts.length === 0"><a href="https://fosstodon.org/@floccus">Loading posts</a></span>
+            <v-card-text v-else><a href="https://fosstodon.org/@floccus">Follow @floccus on fosstodon.org</a></v-card-text>
           </v-card>
         </v-col>
         <v-col class="col-12 col-sm-6">
@@ -120,18 +121,24 @@
 </template>
 
 <script>
-import { Timeline } from 'vue-tweet-embed'
+
 export default {
   name: 'IndexPage',
-  components: {Timeline},
-  head: {
-    title: 'Private bookmarks sync',
-  },
-  computed: {
-    twttr() {
-      // eslint-disable-next-line
-      return typeof twttr === 'undefined'? null : twttr
+  components: {},
+  data() {
+    return {
+      posts: [],
     }
+  },
+  head: {
+    title: 'Private bookmarks syncing',
+  },
+  async created() {
+    const res = await fetch('https://fosstodon.org/@floccus.rss')
+    const text = await res.text()
+    const domParser = new DOMParser()
+    const doc = domParser.parseFromString(text, 'application/xml')
+    this.posts = [...doc.querySelectorAll('rss channel item description')].map(node => node.textContent)
   }
 }
 </script>

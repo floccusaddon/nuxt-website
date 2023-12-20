@@ -58,7 +58,7 @@ export default {
     return {
       title: 'floccus',
       icons: [
-        { icon: 'mdi-twitter', href: 'https://twitter.com/floccusAddon' },
+        { icon: 'mdi-mastodon', href: 'https://fosstodon.org/@floccus' },
         { icon: 'mdi-github', href: 'https://github.com/floccusAddon' },
         {
           icon: 'mdi-google-play',

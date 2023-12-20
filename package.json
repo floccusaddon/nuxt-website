@@ -20,7 +20,6 @@
     "vue": "^2.6.14",
     "vue-server-renderer": "^2.6.14",
     "vue-template-compiler": "^2.6.14",
-    "vue-tweet-embed": "^2.4.0",
     "vuetify": "^2.6.1",
     "webpack": "^4.46.0"
   },
