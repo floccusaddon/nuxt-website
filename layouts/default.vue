@@ -8,12 +8,14 @@
         floccus</v-toolbar-title
       >
       <v-spacer />
+      <div class="d-none d-sm-block">
       <v-btn text elevation="0" :to="{ name: 'guides' }" class="mr-4"
       >Guides</v-btn
       >
       <v-btn text elevation="0" :to="{ name: 'faq' }" class="mr-4"
         >FAQ</v-btn
       >
+      </div>
       <v-btn outlined text :to="{ name: 'download' }">Download</v-btn>
     </v-app-bar>
     <v-main>
