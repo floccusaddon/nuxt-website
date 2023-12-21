@@ -2,19 +2,21 @@
   <v-row justify="center" align="center">
     <v-col cols="10" sm="8">
       <v-row class="d-block d-sm-flex">
-        <v-col class="col-12 col-sm-6">
-          <v-img src="undraw_in_sync.svg" />
-        </v-col>
-        <v-col class="col-12 col-sm-6 flex-column d-flex justify-center align-center">
-          <div style="width: 75%">
-            <h2 class="headline">Sync bookmarks privately</h2>
-            <p class="subtitle-1">across browsers and devices</p>
+        <v-col class="col-12 flex-column d-flex justify-center align-center mt-10">
+            <h1 class="headline text-h2">Sync bookmarks privately</h1>
+            <p class="subtitle-1 text-h4">across browsers and devices</p>
             <p class="mt-3 d-xl-block d-sm-flex flex-column">
               <v-btn class="primary" :to="{ name: 'download' }">Download</v-btn>
               <v-btn class="ml-xl-2 mt-sm-2 mt-xl-0" :to="{ name: 'guides' }">Get started</v-btn>
             </p>
-          </div>
         </v-col>
+      </v-row>
+      <v-row class="d-block d-sm-flex">
+        <div style="height: 60vw;">
+          <div style="position: absolute; left: 10vw; right: 10vw; height: 30vh; margin-top: -10vw" >
+            <v-img src="/devices_mockup.svg" contain/>
+          </div>
+        </div>
       </v-row>
       <v-row class="mt-12 d-block d-sm-flex">
         <v-col class="col-12 col-sm-6 flex-column d-flex justify-center">
@@ -39,7 +41,7 @@
               <span v-on="on" v-bind="attrs"><a href="https://drive.google.com">Google Drive</a><v-icon dense>mdi-help-circle-outline</v-icon></span>
             </template>
             <span>Almost everyone has a Google account, so using Google Drive to sync bookmarks is the simplest option. If you want to keep things private, floccus has you covered with end-to-end encryption.</span>
-          </v-tooltip>.
+          </v-tooltip>. Floccus simply syncs and gets out of your way; no ads, no data collection, no nonsense.
           </p>
         </v-col>
         <v-col class="col-12 col-sm-6">
@@ -47,6 +49,9 @@
         </v-col>
       </v-row>
       <v-row class="mt-12 d-block d-sm-flex">
+        <v-col class="col-12 col-sm-6">
+          <v-img src="undraw_devices.svg" />
+        </v-col>
         <v-col class="col-12 col-sm-6 d-flex flex-column justify-center">
           <v-card style="min-height: 50%">
             <v-card-title>Floccus on Mastodon</v-card-title>
@@ -55,15 +60,12 @@
             <v-card-text v-else><a href="https://fosstodon.org/@floccus">Follow @floccus on fosstodon.org</a></v-card-text>
           </v-card>
         </v-col>
-        <v-col class="col-12 col-sm-6">
-          <v-img src="undraw_devices.svg" />
-        </v-col>
       </v-row>
       <v-row class="mt-12 d-block d-sm-flex">
         <v-col class="col-12 col-sm-6 flex-column d-flex justify-center">
           <h2 class="headline">Support floccus</h2>
           <p class="subtitle-1">
-            Floccus is made possible by volunteers, especially by its creator Marcel Klehr who spends his free time making floccus better, bit by bit.
+            Floccus is made possible by volunteers, especially by its creator Marcel Klehr, spending their free time to make floccus better, bit by bit.
           </p>
           <p>
             <v-btn href="/donate">Give something back</v-btn>
