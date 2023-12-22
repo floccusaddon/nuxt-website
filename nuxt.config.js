@@ -15,7 +15,10 @@ export default {
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/logo_32.png' }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/logo_32.png' },
+      { rel: 'me', href: 'https://fosstodon.org/@floccus' }
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
