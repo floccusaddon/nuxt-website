@@ -6,3 +6,4 @@
 6. If you’d like to encrypt your data before storing it in your Drive, you can set a passphrase here. If you don’t enter anything, it won’t be encrypted.
 7. Finally, you can choose which bookmarks folder to sync to that file. By default floccus will create a new folder for you, to avoid syncing something that you don’t want syned. However, with a click on the folder icon you can select any other folder in your bookmarks. Selecting the topmost “untitled” folder will sync everything.
    <img src="screen_gdrive_options.png" />
+8. Make sure to disable your native browser bookmark sync service, because it is likely incompatible with floccus

@@ -6,3 +6,4 @@
    <img src="screen_chrome_options.png" />
 6. Now, you can configure the folder mapping. You can set one local bookmarks folder and one server folder per profile.
    <img src="screen_nc_folder_mapping.png" />
+7. Make sure to disable your native browser bookmark sync service, because it is likely incompatible with floccus
