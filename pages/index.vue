@@ -2,7 +2,7 @@
   <v-row justify="center" align="center">
     <v-col cols="10" sm="8">
       <v-row class="d-block d-sm-flex">
-        <v-col class="col-12 flex-column d-flex justify-center align-center mt-10">
+        <v-col class="col-12 flex-column d-flex justify-center align-center mt-10" :style="{zIndex: 10000}">
             <h1 class="headline text-h2">Sync bookmarks <span class="blue--text">privately</span></h1>
             <p class="subtitle-1 text-h4">across browsers and devices</p>
             <p class="mt-3 d-xl-block d-sm-flex flex-column">
