@@ -71,7 +71,7 @@
             Floccus is made possible by volunteers, especially by its creator Marcel Klehr, spending their free time to make floccus better, bit by bit.
           </p>
           <p>
-            <v-btn href="/donate">Give something back</v-btn>
+            <v-btn class="primary" href="/donate">Give something back</v-btn>
           </p>
         </v-col>
         <v-col class="col-12 col-sm-6">
