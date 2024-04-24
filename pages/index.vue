@@ -21,7 +21,7 @@
       <v-row class="mt-12 d-block d-sm-flex">
         <v-col class="col-12 col-sm-6 flex-column d-flex justify-center">
           <h2 class="headline">
-            Apps for Browsers, iOS & Android that sync your bookmarks
+            Apps for Browsers, iOS & Android that sync your bookmarks and tabs
           </h2>
           <p class="subtitle-1">
             Via a
@@ -42,6 +42,9 @@
             </template>
             <span>Almost everyone has a Google account, so using Google Drive to sync bookmarks is the simplest option. If you want to keep things private, floccus has you covered with end-to-end encryption.</span>
           </v-tooltip>. Floccus simply syncs and gets out of your way; no ads, no data collection, no nonsense.
+          </p>
+          <p class="subtitle-1">
+            Looking for tab syncing? Floccus has got you covered: Check out the <a href="/guides">guides</a>.
           </p>
         </v-col>
         <v-col class="col-12 col-sm-6">
