@@ -117,11 +117,11 @@ If you are missing some toplevel folders on a browser, try setting a different l
         },
         {
           question:
-            "Floccus suddenly won't stop syncing one of my profiles. What can I do?",
+            "Floccus suddenly shows status as 'Scheduled' and tells me to wait without doing anything. What can I do?",
           answer: `Floccus employs a locking mechanism to avoid manipulating data on the server from two browsers at the same time. Sometimes, when closing a browser while floccus is syncing,
-this lock is not removed. On the next browser start floccus will then wait for the lock to be released and appear to be syncing for a long time without doing anything.
+this lock is not removed. On the next browser start floccus will then wait for the lock to be released and will tell you to wait while it'S doing nothing.
 
-After half an hour of trying floccus will override the lock and start its own sync run. So, after half an hour, things should be fine without you having to intervene.`,
+After two hours of trying floccus should override the lock and finally start syncing again. If this doesn't happen for you, please have a look at the issues section on the floccus github repository and perhaps file a new issue there.`,
         },
       ].map(faq => ({...faq, show: false})),
     }
