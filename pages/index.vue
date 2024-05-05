@@ -11,6 +11,9 @@
             </p>
         </v-col>
       </v-row>
+      <v-alert type="success" class="mt-5">
+        New in <b>v5.1.0</b>: Floccus now supports syncing via <b>git</b>!
+      </v-alert>
       <v-row class="d-block d-sm-flex">
         <div style="height: 60vw;">
           <div style="position: absolute; left: 10vw; right: 10vw; height: 30vh; margin-top: -10vw; -webkit-margin-before: 2vw;" >
