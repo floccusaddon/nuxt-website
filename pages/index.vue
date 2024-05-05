@@ -30,6 +30,12 @@
                 <span v-on="on" v-bind="attrs"><a href="https://nextcloud.com">Nextcloud</a><v-icon dense>mdi-help-circle-outline</v-icon></span>
               </template>
               <span>Nextcloud is an Open Source collaboration platform that you can self-host on your own server or rent as a Service in the cloud. It features a beautiful Bookmarks app that seemlessly integrates with floccus.</span>
+            </v-tooltip>,
+            <v-tooltip bottom :max-width="250">
+              <template #activator="{on, attrs}">
+                <span v-on="on" v-bind="attrs"><a href="https://en.wikipedia.org/wiki/Git">Git</a><v-icon dense>mdi-help-circle-outline</v-icon></span>
+              </template>
+              <span>Git is originally a source code versioning software that allows users to track the evolution of files in a folder and sync changes to a server. Popular Git hosting sites are GitHub, Gitlab. You can also easily host your own Git server using Gitea, for example.</span>
             </v-tooltip>
               or <v-tooltip bottom :max-width="250">
             <template #activator="{on, attrs}">

@@ -48,6 +48,7 @@ import installAndroid from '~/guides/install-android.md'
 import syncNcBookmarks from '~/guides/sync-nextcloud-bookmarks.md'
 import syncWebdav from '~/guides/sync-webdav.md'
 import syncGDrive from '~/guides/sync-googledrive.md'
+import syncGit from '~/guides/sync-git.md'
 import strategies from '~/guides/strategies.md'
 import tabs from '~/guides/tabs.md'
 
@@ -84,6 +85,11 @@ export default {
         {
           title: 'Sync via Google Drive',
           content: syncGDrive,
+          show: false,
+        },
+        {
+          title: 'Sync via Git',
+          content: syncGit,
           show: false,
         },
         {
