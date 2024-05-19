@@ -7,11 +7,7 @@
     </v-row>
     <v-row justify="center" align="center">
       <v-col cols="10" sm="8">
-        <p>If you require support you can</p>
-        <ul>
-          <li><a href="https://github.com/floccusaddon/floccus/issues">Submit an issue on GitHub</a></li>
-          <li><a href="mailto:mklehr@gmx.net">Send a mail</a></li>
-        </ul>
+        <p>If you require support you can <a href="https://github.com/floccusaddon/floccus/issues">submit an issue on GitHub</a></p>
       </v-col>
     </v-row>
     <v-row justify="center" align="center">
