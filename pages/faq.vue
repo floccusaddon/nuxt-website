@@ -62,7 +62,10 @@ The only mobile browser to support extensions that interact with bookmarks is cu
           question: 'When will floccus be available for Firefox on Android?',
           answer: `Firefox for Android is making strides to support more addons. Floccus requires specific bookmarks APIs, however, which have not been implemented in Firefox for Android yet. So, we still wait, but the waiting won't be long.`,
         },
-
+        {
+          question: 'Does floccus sync my bookmarks with end-to-end encryption?',
+          answer: `Floccus offers multiple sync methods. Only the WebDAV and the Google Drive option allow setting an encryption password to sync with end-to-end encryption. Syncing via Nextcloud Bookmarks or Git is not possible in end-to-end encrypted fashion with floccus.`,
+        },
         {
           question: 'Does floccus support bookmarks tags in Firefox?',
           answer:
@@ -100,7 +103,7 @@ For Nextcloud you have the option to use your normal account password, or create
 
 For WebDAV, only a normal password can be used.
 
-Floccus only stores the data you provide in your browser and doesn't send them anywhere. The aforementioned access credentials are thus as secure as your browser, by default. If even that is not enough for you, you can encrypt your credentials entered into floccus with a passphrase that you will have to enter on every browser start.`,
+Floccus only stores the data you provide in your browser and doesn't send them anywhere. The aforementioned access credentials are thus as secure as your browser, by default.`,
         },
         {
           question:
