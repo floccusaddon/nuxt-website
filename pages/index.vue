@@ -127,7 +127,7 @@ export default {
     }
   },
   head: {
-    title: 'Private bookmarks syncing',
+    title: 'Cross-browser bookmarks syncing',
   },
   async created() {
     const res = await fetch('https://fosstodon.org/@floccus.rss')
