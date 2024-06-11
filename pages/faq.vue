@@ -29,6 +29,10 @@
     <v-row justify="center" align="center">
       <v-col cols="10" sm="8">
         <p>
+          Have a problem with floccus that isn't covered here?
+          <a href="https://github.com/floccusaddon/floccus/issues">File an issue on GitHub</a>
+        </p>
+        <p>
           How does Floccus deal with your personal data?
           <NuxtLink to="/privacy">Privacy Policy</NuxtLink>
         </p>
