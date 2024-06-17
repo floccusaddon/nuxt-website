@@ -47,7 +47,7 @@
               <span v-on="on" v-bind="attrs"><a href="https://drive.google.com">Google Drive</a><v-icon dense>mdi-help-circle-outline</v-icon></span>
             </template>
             <span>Almost everyone has a Google account, so using Google Drive to sync bookmarks is the simplest option. If you want to keep things private, floccus has you covered with end-to-end encryption.</span>
-          </v-tooltip>. Floccus simply syncs and gets out of your way; no ads, no data collection, no nonsense.
+          </v-tooltip>. Floccus simply syncs and gets out of your way; no ads, no data collection, no nonsense; free and open source software.
           </p>
           <p class="subtitle-1">
             Looking for tab syncing? Floccus has got you covered: Check out the <a href="/guides">guides</a>.
