@@ -27,7 +27,7 @@
         <v-btn href="https://github.com/sponsors/marcelklehr" class="mt-2 mr-2 col-lg-5">GitHub Sponsors</v-btn>
         <v-btn href="https://liberapay.com/marcelklehr/donate" class="mt-2 mr-2 col-lg-5">Liberapay</v-btn>
         <v-btn href="https://opencollective.com/floccus" class="mt-2 mr-2 col-lg-5">OpenCollective</v-btn>
-        <v-btn href="https://www.paypal.me/marcelklehr1" class="mt-2 mr-2 col-lg-5">PayPal</v-btn>
+        <v-btn href="https://www.paypal.com/donate/?hosted_button_id=R3SDCC7AFSYZU" class="mt-2 mr-2 col-lg-5">PayPal</v-btn>
         <v-btn href="https://www.patreon.com/marcelklehr" class="mt-2 mr-2 col-lg-5">Patreon</v-btn>
         <v-btn href="https://ko-fi.com/marcelklehr" class="mt-2 mr-2 col-lg-5">Ko-fi</v-btn>
       </v-col>
