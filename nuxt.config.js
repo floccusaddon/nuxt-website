@@ -19,6 +19,9 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/logo_32.png' },
       { rel: 'me', href: 'https://fosstodon.org/@floccus' }
     ],
+    script: [
+      {src: 'https://plausible.io/js/script.outbound-links.js'}
+    ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -41,7 +44,7 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['@nuxtjs/markdownit', '@nuxtjs/plausible'],
+  modules: ['@nuxtjs/markdownit'],
 
   // [optional] markdownit options
   // See https://github.com/markdown-it/markdown-it
