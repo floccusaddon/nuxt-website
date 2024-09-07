@@ -15,7 +15,6 @@
   },
   "dependencies": {
     "@nuxtjs/markdownit": "^2.0.0",
-    "@nuxtjs/plausible": "^1.0.2",
     "core-js": "^3.19.3",
     "nuxt": "^2.15.8",
     "vue": "^2.6.14",
