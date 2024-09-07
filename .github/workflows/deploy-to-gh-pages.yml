@@ -15,7 +15,7 @@ jobs:
         id: versions
         with:
           fallbackNode: '^16'
-          fallbackNpm: '^10'
+          fallbackNpm: '^8'
 
       - name: Set up node ${{ steps.versions.outputs.nodeVersion }}
         uses: actions/setup-node@v2
