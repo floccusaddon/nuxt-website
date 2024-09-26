@@ -130,6 +130,10 @@ this lock is not removed. On the next browser start floccus will then wait for t
 
 After two hours of trying floccus should override the lock and finally start syncing again. If this doesn't happen for you, please have a look at the issues section on the floccus github repository and perhaps file a new issue there.`,
         },
+        {
+          question: "I'm seeing 'Failed to map parentId' errors . What can I do?",
+          answer: `This error indicates that something went wrong during the sync. The developers are aware of these errors and are working on fixing all instances of them. In the meantime you can try to trigger a sync from scratch in the settings of the profile that errored. Make sure you have a backup of your bookmarks before you do this, and check your bookmarks for deleted bookmarks that may have come back. You can be sure that nothing will be deleted in this step, though.`,
+        },
       ].map(faq => ({...faq, show: false})),
     }
   },
