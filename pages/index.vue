@@ -23,12 +23,24 @@
           <v-img src="undraw_product_photography.svg" :height="250" :width="300" />
         </v-col>
         <v-col class="col-12 col-sm-6 flex-column d-flex justify-center">
+          <div class="mt-10 d-flex justify-center">
           <h2 class="headline">
-            Sponsored by <em>you</em>?
+            Sponsored by
           </h2>
-          <p class="subtitle-1">
-            <span style="background: white; color: black; padding: 3px;">Support this project by becoming a <a href="https://opencollective.com/floccus">Bronze</a>, <a href="https://opencollective.com/floccus">Silver</a> or <a href="https://opencollective.com/floccus">Gold</a> Sponsor. <br/> A large company logo will be added here with a link to your website.</span>
-          </p>
+          </div>
+
+          <div class="mt-10 d-flex justify-center">
+          <a href="https://linkwarden.app">
+            <v-img src="sponsors_linkwarden.png" :height="150" :width="150"></v-img>
+            <b style="color: white;">Linkwarden</b>
+          </a>
+          </div>
+          <div class="mt-10 d-flex justify-center">
+            <p class="subtitle-1 mt-10">
+              <span>Support this project by becoming a <a href="https://opencollective.com/floccus" style="color: white;">Bronze</a>, <a href="https://opencollective.com/floccus" style="color: white;">Silver</a> or <a href="https://opencollective.com/floccus" style="color: white;">Gold</a> Sponsor. <br/> A large company logo will be added here with a link to your website.</span>
+            </p>
+          </div>
+
         </v-col>
       </v-row>
       <v-row class="mt-12 d-block d-sm-flex">
