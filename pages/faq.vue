@@ -125,8 +125,7 @@ If you are missing some toplevel folders on a browser, try setting a different l
         {
           question:
             "Floccus suddenly shows status as 'Scheduled' and tells me to wait without doing anything. What can I do?",
-          answer: `Floccus employs a locking mechanism to avoid manipulating data on the server from two browsers at the same time. Sometimes, when closing a browser while floccus is syncing,
-this lock is not removed. On the next browser start floccus will then wait for the lock to be released and will tell you to wait while it'S doing nothing.
+          answer: `Floccus employs a locking mechanism to avoid manipulating data on the server from two browsers at the same time. Sometimes, when closing a browser while floccus is syncing, this lock is not removed. On the next browser start floccus will then wait for the lock to be released and will tell you to wait while it's doing nothing.
 
 After two hours of trying floccus should override the lock and finally start syncing again. If this doesn't happen for you, please have a look at the issues section on the floccus github repository and perhaps file a new issue there.`,
         },
