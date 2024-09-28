@@ -33,6 +33,12 @@
             </v-tooltip>,
             <v-tooltip bottom :max-width="250">
               <template #activator="{on, attrs}">
+                <span v-on="on" v-bind="attrs"><a href="https://linkwarden.app">Linkwarden</a><v-icon dense>mdi-help-circle-outline</v-icon></span>
+              </template>
+              <span>Linkwarden is a full-featured, Open Source bookmarks solution that you can self-host on your own server or rent as a Service in the cloud.</span>
+            </v-tooltip>,
+            <v-tooltip bottom :max-width="250">
+              <template #activator="{on, attrs}">
                 <span v-on="on" v-bind="attrs"><a href="https://en.wikipedia.org/wiki/Git">Git</a><v-icon dense>mdi-help-circle-outline</v-icon></span>
               </template>
               <span>Git is originally a source code versioning software that allows users to track the evolution of files in a folder and sync changes to a server. Popular Git hosting sites are GitHub, Gitlab. You can also easily host your own Git server using Gitea, for example.</span>
