@@ -18,6 +18,19 @@
           </div>
         </div>
       </v-row>
+      <v-row class="mt-12 d-block d-sm-flex" style="background: rebeccapurple; margin-left: -200px; margin-right: -200px; border-radius: 30px; padding: 30px 150px; color: white;">
+        <v-col class="col-12 col-sm-6 flex-column d-flex justify-center">
+          <v-img src="undraw_product_photography.svg" :height="250" :width="300" />
+        </v-col>
+        <v-col class="col-12 col-sm-6 flex-column d-flex justify-center">
+          <h2 class="headline">
+            Sponsored by <em>you</em>?
+          </h2>
+          <p class="subtitle-1">
+            <span style="background: white; color: black; padding: 3px;">Support this project by becoming a <a href="https://opencollective.com/floccus">Bronze</a>, <a href="https://opencollective.com/floccus">Silver</a> or <a href="https://opencollective.com/floccus">Gold</a> Sponsor. <br/> A large company logo will be added here with a link to your website.</span>
+          </p>
+        </v-col>
+      </v-row>
       <v-row class="mt-12 d-block d-sm-flex">
         <v-col class="col-12 col-sm-6 flex-column d-flex justify-center">
           <h2 class="headline">
