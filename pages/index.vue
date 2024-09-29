@@ -20,7 +20,7 @@
       </v-row>
       <v-row class="mt-12 d-block d-sm-flex" style="background: rebeccapurple; margin-left: -200px; margin-right: -200px; border-radius: 30px; padding: 30px 150px; color: white;">
         <v-col class="col-12 col-sm-6 flex-column d-flex justify-center">
-          <v-img src="undraw_product_photography.svg" :height="250" :width="300" />
+          <v-img src="undraw_product_photography.svg" :height="250" :width="300" :contain="true" />
         </v-col>
         <v-col class="col-12 col-sm-6 flex-column d-flex justify-center">
           <div class="mt-10 d-flex justify-center">
@@ -102,6 +102,17 @@
         </v-col>
       </v-row>
       <v-row class="mt-12 d-block d-sm-flex">
+        <v-col class="col-12 col-sm-6 d-flex justify-center">
+          <v-img src="undraw_public_discussion.svg" :contain="true"/>
+        </v-col>
+        <v-col class="col-12 col-sm-6 d-flex flex-column justify-center">
+          <h2 class="mb-10 headline">What users are saying</h2>
+          <v-card v-for="(post,i) in feedback" :key="i" class="mb-6">
+            <v-card-text  v-html="post" style="font-size: 1.15em !important; font-style: italic" />
+          </v-card>
+        </v-col>
+      </v-row>
+      <v-row class="mt-12 d-block d-sm-flex">
         <v-col class="col-12 col-sm-6 flex-column d-flex justify-center">
           <h2 class="headline">Support floccus</h2>
           <p class="subtitle-1">
@@ -155,6 +166,16 @@ export default {
   data() {
     return {
       posts: [],
+      feedback: [
+        'The Floccus ecosystem, coupled with nextCloud Bookmarks App, has SIGNIFICANTLY improved my workflows for bookmark management across multiple computers.',
+        'It didn\'t take much work to set up, and it was TOTALLY worth it!',
+        'Fantastic free extension (and app available) that works like a charm! Support this project and it\'s very underrated.',
+        'Spiritual successor to Xmarks, although this is superior.  End-to-end encryption!',
+        'This extension is really amazing! Marcel, I want to write big thank you for what are you doing, keep going!',
+        'works 100% of the time, super easy to configure. respects privacy : you decide where your data are stored. Good job. Thanks for the Dev.',
+        'I\'ve been using it to sync between Firefox and Chrome since 2020, and while it had some problems syncing early on, it\'s been solid for so long I can\'t even *remember* the last time I encountered a sync error.',
+        'super tool - it does what it should',
+      ],
     }
   },
   head: {
