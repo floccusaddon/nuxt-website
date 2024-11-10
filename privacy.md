@@ -23,8 +23,8 @@ Please also read the [License](./license) which also governs the use of floccus 
 If you have questions about this Privacy Policy please contact me at mklehr@gmx.net.
 
 Marcel Klehr
-Natruper Straße 211A
-49090
+Adalbert-Stifter-Straße 2
+76275 Ettlingen
 Germany
 
 Effective as of Sep 28, 2018
