@@ -1,4 +1,4 @@
-<img src="screen_firefox_account.png" class="float-lg-right" style="max-width: 100%; width: 450px; border: 1px solid grey;" />
+<img src="../screen_firefox_account.png" class="float-lg-right" style="max-width: 100%; width: 450px; border: 1px solid grey;" />
 
 
 Floccus is known to work in Chrome, Firefox, Edge, Opera, Vivaldi, Brave and Kiwi. Click on one of the following links to install floccus in your browser.

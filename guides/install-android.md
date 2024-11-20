@@ -1,4 +1,4 @@
-<img src="screen_android.png" class="float-md-right" style="width: 300px; border: 1px solid grey;" />
+<img src="../screen_android.png" class="float-md-right" style="width: 300px; border: 1px solid grey;" />
 
 Floccus for Android is in an Open Beta phase and is available from
 

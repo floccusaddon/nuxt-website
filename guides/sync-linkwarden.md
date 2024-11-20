@@ -1,4 +1,4 @@
-<img src="screen_linkwarden_settings.png" class="float-md-right" style="width: 500px; border: 1px solid grey;" />
+<img src="../screen_linkwarden_settings.png" class="float-md-right" style="width: 500px; border: 1px solid grey;" />
 
 1. Create a new profile in the Floccus panel
 2. Select Linkwarden as your sync method
