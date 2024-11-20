@@ -10,5 +10,4 @@ Checkout [this list the Cryptomator Community created](https://community.cryptom
 
 The most enjoyable way to sync is via Nextcloud Bookmarks. Nextcloud is an open source cloud collaboration tool that you can self-host or rent as a service.
 Nextcloud offers a multitude of apps to collaborate and share work over, chief amongst them, the Bookmarks app. If you have a Nextcloud installation available,
-try installing the Bookmarks app and set up floccus to sync with it. You can then also access and manage your bookmarks on the go, say from an internet café in Malawi, by simply logging
-into your Nextcloud with any web browser. 
+try installing the Bookmarks app and set up floccus to sync with it. You can then also access and manage your bookmarks on the go, say from an internet café in Malawi, by simply logging into your Nextcloud with any web browser. 

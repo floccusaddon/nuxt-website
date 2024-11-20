@@ -9,8 +9,7 @@ Floccus for Android is in an Open Beta phase and is available from
 Like Floccus in the browser, Floccus for Android allows you to create and manage multiple profiles
 For techincal reasons, the App does not sync your bookmarks with your mobile browsers,
 but makes them available directly in the app itself instead.
-You can share links from your browser or other apps to the Floccus App for bookmarking, create and browse folders and search like you
-would in your browser and open links in your favorite browser.
+You can share links from your browser or other apps to the Floccus App for bookmarking, create and browse folders and search like you would in your browser and open links in your favorite browser.
 
 
 
