@@ -46,6 +46,7 @@ import overview from '~/guides/overview.md'
 import install from '~/guides/install-browser.md'
 import installAndroid from '~/guides/install-android.md'
 import syncNcBookmarks from '~/guides/sync-nextcloud-bookmarks.md'
+import syncLinkwarden from '~/guides/sync-linkwarden.md'
 import syncWebdav from '~/guides/sync-webdav.md'
 import syncGDrive from '~/guides/sync-googledrive.md'
 import syncGit from '~/guides/sync-git.md'
@@ -76,6 +77,11 @@ export default {
         {
           title: 'Sync with Nextcloud Bookmarks',
           content: syncNcBookmarks,
+          show: false,
+        },
+        {
+          title: 'Sync with Linkwarden',
+          content: syncLinkwarden,
           show: false,
         },
         {
