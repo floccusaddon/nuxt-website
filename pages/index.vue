@@ -18,31 +18,6 @@
           </div>
         </div>
       </v-row>
-      <v-row class="mt-12 d-block d-sm-flex" style="background: rebeccapurple; margin-left: -200px; margin-right: -200px; border-radius: 30px; padding: 30px 150px; color: white;">
-        <v-col class="col-12 col-sm-6 flex-column d-flex justify-center">
-          <v-img src="undraw_product_photography.svg" :height="250" :width="300" :contain="true" />
-        </v-col>
-        <v-col class="col-12 col-sm-6 flex-column d-flex justify-center">
-          <div class="mt-10 d-flex justify-center">
-          <h2 class="headline">
-            Sponsored by
-          </h2>
-          </div>
-
-          <div class="mt-10 d-flex justify-center">
-          <a href="https://linkwarden.app">
-            <v-img src="sponsors_linkwarden.png" :height="150" :width="150"></v-img>
-            <b style="color: white;">Linkwarden</b>
-          </a>
-          </div>
-          <div class="mt-10 d-flex justify-center">
-            <p class="subtitle-1 mt-10">
-              <span>Support this project by becoming a <a href="https://opencollective.com/floccus" style="color: white;">Bronze</a>, <a href="https://opencollective.com/floccus" style="color: white;">Silver</a> or <a href="https://opencollective.com/floccus" style="color: white;">Gold</a> Sponsor. <br/> A large company logo will be added here with a link to your website.</span>
-            </p>
-          </div>
-
-        </v-col>
-      </v-row>
       <v-row class="mt-12 d-block d-sm-flex">
         <v-col class="col-12 col-sm-6 flex-column d-flex justify-center">
           <h2 class="headline">
@@ -86,6 +61,24 @@
         </v-col>
         <v-col class="col-12 col-sm-6">
           <v-img src="floccus_schema.png" />
+        </v-col>
+      </v-row>
+      <v-row class="mt-12 d-block d-sm-flex" style="background: rebeccapurple; margin-left: -200px; margin-right: -200px; border-radius: 30px; padding: 30px 150px; color: white;">
+        <v-col class="col-12 col-sm-6 flex-column d-flex justify-center">
+          <v-img src="undraw_product_photography.svg" :height="250" :width="300" :contain="true" />
+        </v-col>
+        <v-col class="col-12 col-sm-6 flex-column d-flex justify-center">
+          <div class="mt-10 d-flex justify-center">
+            <h2 class="headline">
+              Sponsored by <em>you</em> ?
+            </h2>
+          </div>
+          <div class="mt-5 d-flex justify-center">
+            <p class="subtitle-1 mt-5">
+              <span>Support this project by becoming a <a href="https://opencollective.com/floccus" style="color: white;">Bronze</a>, <a href="https://opencollective.com/floccus" style="color: white;">Silver</a> or <a href="https://opencollective.com/floccus" style="color: white;">Gold</a> Sponsor. <br/> A large company logo will be added here with a link to your website.</span>
+            </p>
+          </div>
+
         </v-col>
       </v-row>
       <v-row class="mt-12 d-block d-sm-flex">
