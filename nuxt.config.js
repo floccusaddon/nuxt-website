@@ -12,15 +12,30 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Floccus offers seamless cross-browser bookmarks syncing, making it easy to manage your bookmarks across multiple devices with your privacy in mind. Discover how to enhance your browsing experience.' },
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Floccus offers seamless cross-browser bookmarks syncing, making it easy to manage your bookmarks across multiple devices with your privacy in mind. Discover how to enhance your browsing experience.'
+      },
       { name: 'format-detection', content: 'telephone=no' },
+
+      { hid: 'og:title', property: 'og:title', content: 'Floccus bookmarks sync' },
+      { hid: 'og:url', property: 'og:url', content: 'https://floccus.org/' },
+      { hid: 'og:description', property: 'og:description', content: 'Floccus offers seamless cross-browser bookmarks syncing, making it easy to manage your bookmarks across multiple devices with your privacy in mind. Discover how to enhance your browsing experience.'},
+      { hid: 'og:image', property: 'og:image', content: 'https://floccus.org/floccus_schema.png' },
+
+      // twitter card
+      { hid: "twitter:title", name: "twitter:title", content: 'Floccus bookmarks sync' },
+      { hid: "twitter:url", name: "twitter:url", content: 'https:floccus.org/' },
+      { hid: 'twitter:description', name: 'twitter:description', content: 'Floccus offers seamless cross-browser bookmarks syncing, making it easy to manage your bookmarks across multiple devices with your privacy in mind. Discover how to enhance your browsing experience.'},
+      { hid: "twitter:image", name: "twitter:image", content: 'https://floccus.org/floccus_schema.png' },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/logo_32.png' },
       { rel: 'me', href: 'https://fosstodon.org/@floccus' }
     ],
     script: [
-      {src: 'https://plausible.io/js/script.outbound-links.js'}
+      { src: 'https://plausible.io/js/script.outbound-links.js' }
     ]
   },
 
