@@ -34,6 +34,9 @@ export default {
   name: 'SupportPage',
   head: {
     title: 'Support',
+    meta: [
+      { hid: 'description', name: 'description', content: 'Floccus offers seamless cross-browser bookmarks syncing, here you can find more details about where you can find support for floccus.' },
+    ],
   },
 }
 </script>

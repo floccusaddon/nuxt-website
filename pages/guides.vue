@@ -118,7 +118,10 @@ export default {
     }
   },
   head: {
-    title: 'Guides',
+    title: 'Guides and How tos',
+    meta: [
+      { hid: 'description', name: 'description', content: 'Floccus offers seamless cross-browser bookmarks syncing, here you can find guides and how-tos to get started with floccus.' },
+    ],
   },
 }
 </script>

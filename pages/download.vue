@@ -81,6 +81,9 @@ export default {
   name: 'DownloadPage',
   head: {
     title: 'Download',
+    meta: [
+      { hid: 'description', name: 'description', content: 'Floccus offers seamless cross-browser bookmarks syncing, here you can find all download links for the different browsers and platforms.' },
+    ],
   },
 }
 </script>

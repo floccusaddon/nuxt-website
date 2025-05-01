@@ -137,7 +137,10 @@ After two hours of trying floccus should override the lock and finally start syn
     }
   },
   head: {
-    title: 'FAQ',
+    title: 'Frequently Asked Questions',
+    meta: [
+      { hid: 'description', name: 'description', content: 'Floccus offers seamless cross-browser bookmarks syncing, here you can find all the answers to your questions.' },
+    ],
   },
 }
 </script>

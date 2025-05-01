@@ -22,6 +22,12 @@ export default {
     return {
       privacy
     }
-  }
+  },
+  head: {
+    title: 'Privacy Policy',
+    meta: [
+      { hid: 'description', name: 'description', content: 'Floccus offers seamless cross-browser bookmarks syncing, here you can find more details about how floccus deals with your personal data. This policy is valid for all versions of floccus.' },
+    ],
+  },
 }
 </script>
