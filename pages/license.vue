@@ -27,6 +27,8 @@ export default {
     title: 'License',
     meta: [
       { hid: 'description', name: 'description', content: 'Floccus offers seamless cross-browser bookmarks syncing, here you can find more details about its open source license.' },
+      { hid: 'og:title', property: 'og:title', content: 'License - Floccus bookmarks sync' },
+      { hid: "twitter:title", name: "twitter:title", content: 'License - Floccus bookmarks sync' },
     ],
   },
 }

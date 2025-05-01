@@ -83,6 +83,8 @@ export default {
     title: 'Download',
     meta: [
       { hid: 'description', name: 'description', content: 'Floccus offers seamless cross-browser bookmarks syncing, here you can find all download links for the different browsers and platforms.' },
+      { hid: 'og:title', property: 'og:title', content: 'Download - Floccus bookmarks sync' },
+      { hid: "twitter:title", name: "twitter:title", content: 'Download - Floccus bookmarks sync' },
     ],
   },
 }

@@ -59,6 +59,8 @@ export default {
     title: 'Support floccus',
     meta: [
       { hid: 'description', name: 'description', content: 'Floccus offers seamless cross-browser bookmarks syncing. Work on floccus is fuelled by a voluntary subscription model. If you think what I do is worthwhile, and if you can spare a few coins each month without hardship, please support my work.' },
+      { hid: 'og:title', property: 'og:title', content: 'Support Floccus - Floccus bookmarks sync' },
+      { hid: "twitter:title", name: "twitter:title", content: 'Support Floccus - Floccus bookmarks sync' },
     ],
   },
 }

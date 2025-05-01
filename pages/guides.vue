@@ -121,6 +121,8 @@ export default {
     title: 'Guides and How tos',
     meta: [
       { hid: 'description', name: 'description', content: 'Floccus offers seamless cross-browser bookmarks syncing, here you can find guides and how-tos to get started with floccus.' },
+      { hid: 'og:title', property: 'og:title', content: 'Guides and How tos - Floccus bookmarks sync' },
+      { hid: "twitter:title", name: "twitter:title", content: 'Guides and How tos - Floccus bookmarks sync' },
     ],
   },
 }

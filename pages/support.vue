@@ -36,6 +36,8 @@ export default {
     title: 'Support',
     meta: [
       { hid: 'description', name: 'description', content: 'Floccus offers seamless cross-browser bookmarks syncing, here you can find more details about where you can find support for floccus.' },
+      { hid: 'og:title', property: 'og:title', content: 'Floccus Support - Floccus bookmarks sync' },
+      { hid: "twitter:title", name: "twitter:title", content: 'Floccus Support - Floccus bookmarks sync' },
     ],
   },
 }
