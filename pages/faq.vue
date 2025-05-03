@@ -133,6 +133,10 @@ After two hours of trying floccus should override the lock and finally start syn
           question: "I'm seeing 'Failed to map parentId' errors . What can I do?",
           answer: `This error indicates that something went wrong during the sync. The developers are aware of these errors and are working on fixing all instances of them. In the meantime you can try to trigger a sync from scratch in the settings of the profile that errored. Make sure you have a backup of your bookmarks before you do this, and check your bookmarks for deleted bookmarks that may have come back. You can be sure that nothing will be deleted in this step, though.`,
         },
+        {
+          question: "I'm seeing 'E035: Failed to create bookmark on the server' errors . What can I do?",
+          answer: `This error can happen with older versions of Nextcloud Bookmarks. An update to the latest version should fix this. If it doesn't, please file an issue on the floccus or Nextcloud Bookmarks github repositories.`,
+        },
       ].map(faq => ({...faq, show: false})),
     }
   },
