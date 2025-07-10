@@ -12,3 +12,11 @@ You can enable Auto-sync but set sync strategy to "Always upload local changes a
 ## Manual up- and download
 
 Auto-push can sometimes cause surprises when you have it enabled on multiple devices or when an empty session is pushed after a browser crash, overriding the previously stored session. This is why you can also turn off auto-sync and push and pull your tabs manually, i.e. when you want to switch to a different device upload your open tabs once on device A and download once on device B – et voila, all your tabs are now on the new device.
+
+## Mixing tabs and bookmarks
+
+You can use a subpath on your server to manage tabs, while syncing the root path to your browser bookmarks. This will make available your tabs as bookmarks as well.
+Note however, that, depending on which server you use, this can cause issues. Some of these are:
+
+- Sites that you open without explicitly bookmarking them will automatically appear as bookmarked after some seconds, because the tabs are synced to your bookmarks automatically. This may not be ideal, because you don't know if the site is actually bookmarked or just in your synced tabs.
+- Nextcloud Bookmarks will show sites that you have in your tabs but that are also bookmarked as duplicates
