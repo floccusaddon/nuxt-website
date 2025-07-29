@@ -13,7 +13,7 @@
       </v-row>
       <v-row class="d-block d-sm-flex">
         <div style="height: 60vw;">
-          <div style="position: absolute; left: 10vw; right: 10vw; height: 30vh; margin-top: -10vw; -webkit-margin-before: 2vw;" >
+          <div style="position: absolute; left: 10vw; right: 10vw; height: 30vh; margin-top: 2vw;">
             <v-img src="/devices_mockup.svg" contain/>
           </div>
         </div>
