@@ -137,6 +137,10 @@ After two hours of trying floccus should override the lock and finally start syn
           question: "I'm seeing 'E035: Failed to create bookmark on the server' errors . What can I do?",
           answer: `This error can happen with older versions of Nextcloud Bookmarks. An update to the latest version should fix this. If it doesn't, please file an issue on the floccus or Nextcloud Bookmarks github repositories.`,
         },
+        {
+          question: "I'm seeing 'E034: Remote bookmarks file is unreadable.' errors . What can I do?",
+          answer: `This error can happen e.g. after you have shutdown your computer while floccus was running. Sometimes that leads to only parts of the bookmarks file getting uploaded, which floccus notices and stops the sync. You can remedy this situation by deleting the file on the server and triggering a sync with floccus, ideally on the device that you last made changes on. Floccus will then re-upload the whole file.`,
+        },
       ].map(faq => ({...faq, show: false})),
     }
   },
