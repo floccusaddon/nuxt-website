@@ -150,7 +150,18 @@ export default {
         'works 100% of the time, super easy to configure. respects privacy : you decide where your data are stored. Good job. Thanks for the Dev.',
         'I\'ve been using it to sync between Firefox and Chrome since 2020, and while it had some problems syncing early on, it\'s been solid for so long I can\'t even *remember* the last time I encountered a sync error.',
         'super tool - it does what it should',
-      ],
+        'Brotha, how good is floccus??!',
+        'It\'s actually amazing. I have it connected to google drive and it does what it says. It also has failsafes to make sure your bookmarks don\'t get nuked everywhere in case something goes wrong. Also works on mobile, for example, with kiwi. Also don\'t need to do any mental gymnastics to get it to work. The setup is really simple.',
+        'I have my linkwarden instance set up with all my browsers with Floccus to sync my bookmarks no matter what device I\'m on. Super useful!',
+        'Linkwarden in combination with Floccus has been an absolute dream. I just bookmark things through my browser like normal, and everything\'s synced through linkwarden. Same bookmarks on my work PC personal browser, on my home PC, anywhere.',
+        'I use Floccus ,I have it configured and synchronized with NextCloud , easy access to my bookmarks at any time and from any device',
+        'Floccus! It\'s highly reliable and I\'m actively using it to sync bookmarks between chrome and firefox',
+        'linkwarden and floccus extension on browsers! absolute brilliant solution. works like a charm.',
+        'Perfect. Syncs bookmarks across the board. Personally I use it on Chrome & Firefox on my Pixel as well as Chrome & Firefox on my Mac. Add/Edit/Delete a bookmark on any of those and it syncs perfectly across them all.',
+        'I use Floccus on all devices, which has support and sync to nextcloud. i love that i also can keep synchonize my mobile devices with my desktop machines. Thanks for you great work. I really appreciate it.',
+        'Essential for keeping your favorites organized and secure, and for synchronizing them across different browsers without having to do it manually each time.',
+        'I have been using floccus for years to synchronize bookmarks across operating systems (Linux, Win11, Android) and browsers (Brave, Chromium, Chrome, Firefox, etc.). It works excellently and reliably. Highly recommended!'
+      ].sort(() => Math.random() - 0.5).slice(0, 4),
     }
   },
   head: {
