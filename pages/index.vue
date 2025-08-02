@@ -139,7 +139,7 @@
           </h3>
           <h3 class="mt-2 d-flex justify-space-between flex-wrap">
             Your language is not available yet?
-            <v-btn href="https://www.transifex.com/floccus/floccus/"
+            <v-btn href="https://explore.transifex.com/floccus/floccus/"
             >Help translate</v-btn
             >
           </h3>
