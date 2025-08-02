@@ -11,6 +11,11 @@
             </p>
         </v-col>
       </v-row>
+      <v-row>
+        <v-alert type="info" class="col-12 mt-5 justify-center align-center" border="left" colored-border outlined>
+          <strong>New in Version 5.6 ✨</strong> You can now sync with <a href="https://karakeep.app">KaraKeep</a> and <a href="https://linkwarden.app">Linkwarden</a>! And you can now sync tab groups!
+        </v-alert>
+      </v-row>
       <v-row class="d-block d-sm-flex">
         <div style="height: 60vw;">
           <div style="position: absolute; left: 10vw; right: 10vw; height: 30vh; margin-top: 2vw;">
