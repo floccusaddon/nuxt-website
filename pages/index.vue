@@ -24,7 +24,7 @@
         </div>
       </v-row>
       <v-row class="mt-12 d-block d-sm-flex">
-        <v-col class="col-12 col-sm-6 flex-column d-flex justify-center">
+        <v-col class="col-12 flex-column d-flex justify-center">
           <h2 class="headline">
             Apps for Browsers, iOS & Android that sync your bookmarks and tabs
           </h2>
@@ -40,7 +40,13 @@
               <template #activator="{on, attrs}">
                 <span v-on="on" v-bind="attrs"><a href="https://linkwarden.app">Linkwarden</a><v-icon dense>mdi-help-circle-outline</v-icon></span>
               </template>
-              <span>Linkwarden is a full-featured, Open Source bookmarks solution that you can self-host on your own server or rent as a Service in the cloud.</span>
+              <span>Linkwarden is a full-featured, Open Source bookmarks solution that you can self-host on your own server or rent as a Service in the cloud and access via your browser from anywhere.</span>
+            </v-tooltip>,
+            <v-tooltip bottom :max-width="250">
+              <template #activator="{on, attrs}">
+                <span v-on="on" v-bind="attrs"><a href="https://karakeep.app">KaraKeep</a><v-icon dense>mdi-help-circle-outline</v-icon></span>
+              </template>
+              <span>KaraKeep is a full-featured, Open Source bookmarks solution that you can self-host on your own server and access via your browser from anywhere.</span>
             </v-tooltip>,
             <v-tooltip bottom :max-width="250">
               <template #activator="{on, attrs}">
@@ -64,8 +70,10 @@
             Looking for tab syncing? Floccus has got you covered: Check out the <a href="/guides">guides</a>.
           </p>
         </v-col>
-        <v-col class="col-12 col-sm-6">
-          <v-img src="floccus_schema.png" />
+      </v-row>
+      <v-row class="mt-12 d-block d-sm-flex">
+        <v-col class="col-12">
+          <v-img src="floccus_schema_with_notes.png" />
         </v-col>
       </v-row>
       <v-row class="mt-12 d-block d-sm-flex">
@@ -90,6 +98,9 @@
           <v-card v-for="(post,i) in feedback" :key="i" class="mb-6">
             <v-card-text  v-html="post" style="font-size: 1.15em !important; font-style: italic" />
           </v-card>
+          <p>
+            <v-btn class="primary" href="/donate">Write your review</v-btn>
+          </p>
         </v-col>
       </v-row>
       <v-row class="mt-12 d-block d-sm-flex">
@@ -147,14 +158,14 @@ export default {
     return {
       posts: [],
       feedback: [
-        'The Floccus ecosystem, coupled with nextCloud Bookmarks App, has SIGNIFICANTLY improved my workflows for bookmark management across multiple computers.',
-        'It didn\'t take much work to set up, and it was TOTALLY worth it!',
-        'Fantastic free extension (and app available) that works like a charm! Support this project and it\'s very underrated.',
-        'Spiritual successor to Xmarks, although this is superior.  End-to-end encryption!',
+        'The Floccus ecosystem, coupled with the Nextcloud Bookmarks App, has significantly improved my workflows for bookmark management across multiple computers.',
+        'It didn\'t take much work to set up, and it was totally worth it!',
+        'Fantastic free extension (and app available) that works like a charm! I Support this project. It\'s very underrated!',
+        'Spiritual successor to Xmarks, although this is superior. End-to-end encryption!',
         'This extension is really amazing! Marcel, I want to write big thank you for what are you doing, keep going!',
-        'works 100% of the time, super easy to configure. respects privacy : you decide where your data are stored. Good job. Thanks for the Dev.',
-        'I\'ve been using it to sync between Firefox and Chrome since 2020, and while it had some problems syncing early on, it\'s been solid for so long I can\'t even *remember* the last time I encountered a sync error.',
-        'super tool - it does what it should',
+        '"orks 100% of the time, super easy to configure. respects privacy: you decide where your data are stored. Good job. Thanks for the Dev.',
+        'I\'ve been using it to sync between Firefox and Chrome since 2020, and while it had some problems syncing early on, it\'s been solid for so long I can\'t even remember the last time I encountered a sync error.',
+        'Super tool, it does what it should!',
         'Brotha, how good is floccus??!',
         'It\'s actually amazing. I have it connected to google drive and it does what it says. It also has failsafes to make sure your bookmarks don\'t get nuked everywhere in case something goes wrong. Also works on mobile, for example, with kiwi. Also don\'t need to do any mental gymnastics to get it to work. The setup is really simple.',
         'I have my linkwarden instance set up with all my browsers with Floccus to sync my bookmarks no matter what device I\'m on. Super useful!',
