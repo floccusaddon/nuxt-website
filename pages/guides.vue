@@ -52,6 +52,7 @@ import syncGDrive from '~/guides/sync-googledrive.md'
 import syncGit from '~/guides/sync-git.md'
 import strategies from '~/guides/strategies.md'
 import tabs from '~/guides/tabs.md'
+import importexport from '~/guides/importexport.md'
 
 export default {
   name: 'GuidesPage',
@@ -106,6 +107,11 @@ export default {
         {
           title: 'Sync tabs',
           content: tabs,
+          show: false,
+        },
+        {
+          title: 'Import and export profiles',
+          content: importexport,
           show: false,
         },
       ],
