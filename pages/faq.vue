@@ -150,6 +150,10 @@ After two hours of trying floccus should override the lock and finally start syn
           question: "I'm seeing 'E034: Remote bookmarks file is unreadable.' errors . What can I do?",
           answer: `This error can happen e.g. after you have shutdown your computer while floccus was running. Sometimes that leads to only parts of the bookmarks file getting uploaded, which floccus notices and stops the sync. You can remedy this situation by deleting the file on the server and triggering a sync with floccus, ideally on the device that you last made changes on. Floccus will then re-upload the whole file.`,
         },
+        {
+          question: "Can I use floccus on Kagi's Orion browser?",
+          answer: `Yes, since floccus v5.6 you should be able to install the extension from the Chrome Web Store. (You may have to restart the browser once before it starts working.)`,
+        },
       ].map(faq => ({...faq, show: false})),
     }
     ret.filteredFaqs = ret.faqs
