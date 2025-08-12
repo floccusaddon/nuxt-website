@@ -165,8 +165,8 @@ After two hours of trying floccus should override the lock and finally start syn
         this.filteredFaqs = this.faqs
         return
       }
-      const queries = this.searchQuery.split(' ')
-      this.filteredFaqs = this.faqs.filter(faq => queries.every(query => faq.question.includes(query)) || queries.every(query => faq.answer.includes(query)))
+      const queries = this.searchQuery.toLowerCase().split(' ')
+      this.filteredFaqs = this.faqs.filter(faq => queries.every(query => faq.question.toLowerCase().includes(query)) || queries.every(query => faq.answer.toLowerCase().includes(query)))
     }
   },
   head: {
