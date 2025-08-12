@@ -3,7 +3,12 @@
     <v-row justify="center" align="center">
       <v-col cols="10" sm="8">
         <h1 class="headline">Frequently Asked Questions</h1>
-        <div v-for="faq in faqs" :key="faq.question" class="mt-5">
+        <v-text-field
+          append-icon="mdi-magnify"
+          class="mt-2 mb-4"
+          v-model="searchQuery"
+          label="Search questions..."/>
+        <div v-for="faq in filteredFaqs" :key="faq.question" class="mt-5">
           <v-card class="mb-5 mr-5" rounded>
             <v-card-title
               style="cursor: pointer"
@@ -23,6 +28,9 @@
               </div>
             </v-expand-transition>
           </v-card>
+        </div>
+        <div v-if="filteredFaqs.length === 0">
+          <h2>No FAQs found for your search query</h2>
         </div>
       </v-col>
     </v-row>
@@ -49,7 +57,8 @@
 export default {
   name: 'DownloadPage',
   data() {
-    return {
+    const ret = {
+      searchQuery: '',
       faqs: [
         {
           question: 'Which browsers are supported by floccus?',
@@ -130,7 +139,7 @@ If you are missing some toplevel folders on a browser, try setting a different l
 After two hours of trying floccus should override the lock and finally start syncing again. If this doesn't happen for you, please have a look at the issues section on the floccus github repository and perhaps file a new issue there.`,
         },
         {
-          question: "I'm seeing 'Failed to map parentId' errors . What can I do?",
+          question: "I'm seeing 'Failed to map parentId' errors. What can I do?",
           answer: `This error indicates that something went wrong during the sync. The developers are aware of these errors and are working on fixing all instances of them. In the meantime you can try to trigger a sync from scratch in the settings of the profile that errored. Make sure you have a backup of your bookmarks before you do this, and check your bookmarks for deleted bookmarks that may have come back. You can be sure that nothing will be deleted in this step, though.`,
         },
         {
@@ -142,6 +151,18 @@ After two hours of trying floccus should override the lock and finally start syn
           answer: `This error can happen e.g. after you have shutdown your computer while floccus was running. Sometimes that leads to only parts of the bookmarks file getting uploaded, which floccus notices and stops the sync. You can remedy this situation by deleting the file on the server and triggering a sync with floccus, ideally on the device that you last made changes on. Floccus will then re-upload the whole file.`,
         },
       ].map(faq => ({...faq, show: false})),
+    }
+    ret.filteredFaqs = ret.faqs
+    return ret
+  },
+  watch: {
+    searchQuery() {
+      if (this.searchQuery.trim() === '') {
+        this.filteredFaqs = this.faqs
+        return
+      }
+      const queries = this.searchQuery.split(' ')
+      this.filteredFaqs = this.faqs.filter(faq => queries.every(query => faq.question.includes(query)) || queries.every(query => faq.answer.includes(query)))
     }
   },
   head: {
