@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/uninstall", {data:[{}],fetch:{},mutations:void 0});
