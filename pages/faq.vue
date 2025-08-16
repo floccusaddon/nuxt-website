@@ -63,7 +63,7 @@ export default {
         {
           question: 'Which browsers are supported by floccus?',
           answer:
-            'Currently floccus supports Chromium, Google Chrome, Mozilla Firefox, Opera, Brave, Vivaldi and Microsoft Edge.',
+            'Currently floccus supports Chromium, Google Chrome, Mozilla Firefox, Microsoft Edge, Opera, Brave, Vivaldi and Orion. Safari is currently not supported.',
         },
         {
           question: 'How can I access my bookmarks on my Android phone?',
