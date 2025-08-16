@@ -14,14 +14,15 @@
     "lintfix": "prettier --write --list-different . && npm run lint:js -- --fix && npm run lint:style -- --fix"
   },
   "dependencies": {
-    "@nuxtjs/markdownit": "^2.0.0",
+    "@nuxtjs/markdownit": "2.x",
+    "@sentry/browser": "8.x",
     "core-js": "^3.19.3",
-    "nuxt": "^2.15.8",
+    "nuxt": "2.x",
     "vue": "^2.6.14",
     "vue-server-renderer": "^2.6.14",
     "vue-template-compiler": "^2.6.14",
-    "vuetify": "^2.6.1",
-    "webpack": "^4.46.0"
+    "vuetify": "2.x",
+    "webpack": "4.x"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.16.3",
