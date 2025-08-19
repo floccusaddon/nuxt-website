@@ -3,12 +3,12 @@
     <v-col cols="10" sm="8">
       <v-row class="d-block d-sm-flex">
         <v-col class="col-12 flex-column d-flex justify-center align-center mt-10" :style="{zIndex: 10000}">
-            <h1 class="headline text-h2">Sync bookmarks & tabs <span class="blue--text">privately</span></h1>
+            <h1 class="headline text-h2 text-sm-center">Sync bookmarks & tabs&nbsp;<span class="blue--text">privately</span></h1>
             <p class="subtitle-1 text-h4">across browsers and devices</p>
-            <p class="mt-3 d-xl-block d-sm-flex flex-column">
-              <v-btn color="purple" class="white--text" target="_blank" href="https://youtube.com/watch?v=DFE3MFYT1jM">Watch the intro</v-btn>
-              <v-btn class="primary ml-xl-2 mt-sm-2 mt-xl-0" :to="{ name: 'download' }">Download</v-btn>
-              <v-btn class="ml-xl-2 mt-sm-2 mt-xl-0" :to="{ name: 'guides' }">Get started</v-btn>
+            <p class="mt-3 d-flex flex-column flex-lg-row justify-space-between align-center">
+              <v-btn color="ma-1 purple" class="white--text" target="_blank" href="https://youtube.com/watch?v=DFE3MFYT1jM">Watch the intro</v-btn>
+              <v-btn class="primary ma-1" :to="{ name: 'download' }">Download</v-btn>
+              <v-btn class="ma-1" :to="{ name: 'guides' }">Get started</v-btn>
             </p>
         </v-col>
       </v-row>
