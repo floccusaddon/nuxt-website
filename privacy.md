@@ -16,7 +16,7 @@ Neither the authors of Floccus nor the publisher receive any of the data you pro
 
 ## License
 
-Please also read the [License](./license) which also governs the use of floccus as well as liability of its authors.
+Please also read the [License](/license) which also governs the use of floccus as well as liability of its authors.
 
 ## Contact Us
 
