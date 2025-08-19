@@ -6,7 +6,8 @@
             <h1 class="headline text-h2">Sync bookmarks & tabs <span class="blue--text">privately</span></h1>
             <p class="subtitle-1 text-h4">across browsers and devices</p>
             <p class="mt-3 d-xl-block d-sm-flex flex-column">
-              <v-btn class="primary" :to="{ name: 'download' }">Download</v-btn>
+              <v-btn color="purple" class="white--text" target="_blank" href="https://youtube.com/watch?v=DFE3MFYT1jM">Watch the intro</v-btn>
+              <v-btn class="primary ml-xl-2 mt-sm-2 mt-xl-0" :to="{ name: 'download' }">Download</v-btn>
               <v-btn class="ml-xl-2 mt-sm-2 mt-xl-0" :to="{ name: 'guides' }">Get started</v-btn>
             </p>
         </v-col>
