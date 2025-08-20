@@ -45,6 +45,7 @@
         <v-btn href="https://alternativeto.net/software/floccus/about/" class="mt-2 mr-2 col-lg-5">AlternativeTo</v-btn>
         <v-btn href="https://addons.mozilla.org/de/firefox/addon/floccus/reviews/" class="mt-2 mr-2 col-lg-5">Firefox Addons</v-btn>
         <v-btn href="https://chromewebstore.google.com/detail/floccus-bookmarks-sync/fnaicdffflnofjppbagibeoednhnbjhg" class="mt-2 mr-2 col-lg-5">Chrome Webstore</v-btn>
+        <v-btn href="https://microsoftedge.microsoft.com/addons/detail/floccus-bookmarks-sync/gjkddcofhiifldbllobcamllmanombji" class="mt-2 mr-2 col-lg-5">Edge Addons</v-btn>
       </v-col>
     </v-row>
   </div>
