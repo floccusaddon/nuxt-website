@@ -99,14 +99,16 @@ The only mobile browser to support extensions that interact with bookmarks is cu
         {
           question: 'How are non-HTTP URLs treated?',
           answer:
-            'Since Nextcloud Bookmarks currently only supports HTTP links, URLs with any other schemes are ignored and left alone, when syncing via Nextcloud Bookmarks.\n' +
+            'Nextcloud Bookmarks currently only supports `http(s):` and `javascript:` links, URLs with any other schemes are ignored and left alone, when syncing via Nextcloud Bookmarks.\n' +
             '\n' +
-            'When syncing via WebDAV or Google Drive, `http(s):`, `ftp:`, `data:`, `chrome:` and `javascript:` bookmarks are supported.',
+            'When syncing via WebDAV or Google Drive, `http(s):`, `ftp:`, `data:`, `chrome:` and `javascript:` bookmarks are supported.' +
+            '\n\n' +
+            'When syncing via Linkwarden or KaraKeep, only `http(s):`, `ftp:` and `javascript:` links are supported.',
         },
         {
           question: 'Does floccus track usage data at all?',
           answer:
-            "No. Floccus does not track you in any way. The only network traffic initiated by floccus is syncing your bookmarks to the server of your choosing. That's it.",
+            "No. By default floccus does not track you in any way. The only network traffic initiated by floccus is syncing your bookmarks to the server of your choosing. That's it. If you enable Automated Error reporting, floccus sends the errors you see to Sentry, so that the developers have insight into what's going wrong for users.",
         },
         {
           question: 'How does floccus treat my cloud credentials?',
@@ -145,6 +147,10 @@ After two hours of trying floccus should override the lock and finally start syn
         {
           question: "I'm seeing 'E035: Failed to create bookmark on the server' errors . What can I do?",
           answer: `This error can happen with older versions of Nextcloud Bookmarks. An update to the latest version should fix this. If it doesn't, please file an issue on the floccus or Nextcloud Bookmarks github repositories.`,
+        },
+        {
+          question: "I'm seeing 404 errors with the Linkwarden sync method. What can I do?",
+          answer: `This error can happen with older versions of Linkwarden. An update to the latest version should fix this. If it doesn't, please file an issue on the floccus github repository.`,
         },
         {
           question: "I'm seeing 'E034: Remote bookmarks file is unreadable.' errors . What can I do?",
