@@ -76,6 +76,7 @@ export default {
       { hid: 'description', name: 'description', content: 'Floccus offers seamless cross-browser bookmarks syncing, here you can find all the answers to your questions.' },
       { hid: 'og:title', property: 'og:title', content: 'Goodbye - Floccus bookmarks sync' },
       { hid: "twitter:title", name: "twitter:title", content: 'Goodbye - Floccus bookmarks sync' },
+      { name: "robots", content: "noindex" },
     ],
   },
 }
