@@ -160,6 +160,10 @@ After two hours of trying floccus should override the lock and finally start syn
           question: "Can I use floccus on Kagi's Orion browser?",
           answer: `Yes, since floccus v5.6 you should be able to install the extension from the Chrome Web Store. (You may have to restart the browser once before it starts working.)`,
         },
+        {
+          question: "When logging in with Google, I get the following error: 'You can't sign in to this app because it doesn't comply with Google's OAuth 2.0 policy for keeping apps secure.' What can I do?",
+          answer: `You're likely using a browser that is not supported by Google's OAuth login service, e.g. Ungoogled Chromium is such a browser. You can still set up a Google Drive sync profile by setting it up on a supported browser, exporting that profile to a file and importing it into the unsupported browser.`,
+        },
       ].map(faq => ({...faq, show: false})),
     }
     ret.filteredFaqs = ret.faqs
