@@ -28,6 +28,41 @@
         <v-btn href="https://liberapay.com/marcelklehr/donate" class="mt-2 mr-2 col-lg-5">Liberapay</v-btn>
         <v-btn href="https://opencollective.com/floccus" class="mt-2 mr-2 col-lg-5">OpenCollective</v-btn>
         <v-btn href="https://www.paypal.com/donate/?hosted_button_id=R3SDCC7AFSYZU" class="mt-2 mr-2 col-lg-5">PayPal</v-btn>
+        <v-dialog
+          v-model="showWero"
+          width="500"
+        >
+          <template #activator="{ on, attrs }">
+            <v-btn class="mt-2 mr-2 col-lg-5" v-bind="attrs" @click="showWero = true" v-on="on">Wero</v-btn>
+          </template>
+
+          <v-card>
+            <v-card-title class="text-h5 grey lighten-2">
+              Donate via Wero
+            </v-card-title>
+
+            <v-card-text>
+              You can scan this QR code with your Wero app to donate.
+            </v-card-text>
+
+            <v-card-text>
+              <v-img src="/wero-qr-code.svg" />
+            </v-card-text>
+
+            <v-divider></v-divider>
+
+            <v-card-actions>
+              <v-spacer></v-spacer>
+              <v-btn
+                color="primary"
+                text
+                @click="showWero = false"
+              >
+                Done
+              </v-btn>
+            </v-card-actions>
+          </v-card>
+        </v-dialog>
         <v-btn href="https://www.patreon.com/marcelklehr" class="mt-2 mr-2 col-lg-5">Patreon</v-btn>
         <v-btn href="https://ko-fi.com/marcelklehr" class="mt-2 mr-2 col-lg-5">Ko-fi</v-btn>
       </v-col>
@@ -54,6 +89,11 @@
 <script>
 export default {
   name: 'DonatePage',
+  data() {
+    return {
+      showWero: false,
+    }
+  },
   head: {
     title: 'Support floccus',
     meta: [
@@ -61,6 +101,6 @@ export default {
       { hid: 'og:title', property: 'og:title', content: 'Support Floccus - Floccus bookmarks sync' },
       { hid: "twitter:title", name: "twitter:title", content: 'Support Floccus - Floccus bookmarks sync' },
     ],
-  },
+  }
 }
 </script>
