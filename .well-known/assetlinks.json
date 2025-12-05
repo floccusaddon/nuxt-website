@@ -3,6 +3,6 @@
   "target": {
     "namespace": "android_app",
     "package_name": "org.handmadeideas.floccus",
-    "sha256_cert_fingerprints": ["ffed2778ff07371e6367b6dcf5d7c1327c57ff7158b8444029182a9aa2dd7085"]
+    "sha256_cert_fingerprints": ["FF:ED:27:78:FF:07:37:1E:63:67:B6:DC:F5:D7:C1:32:7C:57:FF:71:58:B8:44:40:29:18:2A:9A:A2:DD:70:85"]
   }
 }]
