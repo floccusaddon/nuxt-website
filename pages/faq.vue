@@ -153,7 +153,11 @@ After two hours of trying floccus should override the lock and finally start syn
           answer: `This error can happen with older versions of Linkwarden. An update to the latest version should fix this. If it doesn't, please file an issue on the floccus github repository.`,
         },
         {
-          question: "I'm seeing 'E034: Remote bookmarks file is unreadable.' errors . What can I do?",
+          question: "I am receiving a 401 HTTP error when trying to set up Floccus with Git.  What can I do?",
+          answer: `Try setting up a device token and using that instead of your personal password. The steps for this can vary depending on the service you are using, but you can find more information here: https://github.com/floccusaddon/floccus/discussions/1655`,
+        },
+        {
+          question: "I'm seeing 'E034: Remote bookmarks file is unreadable.' errors. What can I do?",
           answer: `This error can happen e.g. after you have shutdown your computer while floccus was running. Sometimes that leads to only parts of the bookmarks file getting uploaded, which floccus notices and stops the sync. You can remedy this situation by deleting the file on the server and triggering a sync with floccus, ideally on the device that you last made changes on. Floccus will then re-upload the whole file.`,
         },
         {
