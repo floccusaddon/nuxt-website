@@ -62,6 +62,7 @@ export default {
       title: 'floccus',
       icons: [
         { icon: 'mdi-mastodon', href: 'https://fosstodon.org/@floccus' },
+        { icon: 'mdi-reddit', href: 'https://reddit.com/r/floccus' },
         { icon: 'mdi-github', href: 'https://github.com/floccusAddon' },
         {
           icon: 'mdi-google-play',
