@@ -7,18 +7,17 @@
           append-icon="mdi-magnify"
           class="mt-2 mb-4"
           v-model="searchQuery"
-          label="Search questions..."/>
+          label="Search questions..."
+        />
         <div v-for="faq in filteredFaqs" :key="faq.question" class="mt-5">
           <v-card class="mb-5 mr-5" rounded>
-            <v-card-title
-              style="cursor: pointer"
-              @click="faq.show = !faq.show"
-            >{{ faq.question }}
+            <v-card-title style="cursor: pointer" @click="faq.show = !faq.show"
+              >{{ faq.question }}
               <v-spacer></v-spacer>
               <v-btn icon>
                 <v-icon>{{
-                    faq.show ? 'mdi-chevron-up' : 'mdi-chevron-down'
-                  }}</v-icon>
+                  faq.show ? 'mdi-chevron-up' : 'mdi-chevron-down'
+                }}</v-icon>
               </v-btn>
             </v-card-title>
             <v-expand-transition>
@@ -38,7 +37,9 @@
       <v-col cols="10" sm="8">
         <p>
           Have a problem with floccus that isn't covered here?
-          <a href="https://github.com/floccusaddon/floccus/issues">File an issue on GitHub</a>
+          <a href="https://github.com/floccusaddon/floccus/issues"
+            >File an issue on GitHub</a
+          >
         </p>
         <p>
           How does Floccus deal with your personal data?
@@ -76,7 +77,8 @@ The only mobile browser to support extensions that interact with bookmarks is cu
           answer: `Firefox for Android is making strides to support more addons. Floccus requires specific bookmarks APIs, however, which have not been implemented in Firefox for Android yet. So, we still wait, but the waiting won't be long.`,
         },
         {
-          question: 'Does floccus sync my bookmarks with end-to-end encryption?',
+          question:
+            'Does floccus sync my bookmarks with end-to-end encryption?',
           answer: `Floccus offers multiple sync methods. Only the WebDAV and the Google Drive option allow setting an encryption password to sync with end-to-end encryption. Syncing via Nextcloud Bookmarks or Git is not possible in end-to-end encrypted fashion with floccus.`,
         },
         {
@@ -88,7 +90,7 @@ The only mobile browser to support extensions that interact with bookmarks is cu
         {
           question: 'Does floccus support separators in Firefox?',
           answer:
-            'Yes. Separators are synced even to Browsers that don\'t support them natively using bookmarks as substitutes. When using Nextcloud Bookmarks you currently can only have one separator per folder.',
+            "Yes. Separators are synced even to Browsers that don't support them natively using bookmarks as substitutes. When using Nextcloud Bookmarks you currently can only have one separator per folder.",
         },
 
         {
@@ -141,23 +143,28 @@ If you are missing some toplevel folders on a browser, try setting a different l
 After two hours of trying floccus should override the lock and finally start syncing again. If this doesn't happen for you, please have a look at the issues section on the floccus github repository and perhaps file a new issue there.`,
         },
         {
-          question: "I'm seeing 'Failed to map parentId' errors. What can I do?",
+          question:
+            "I'm seeing 'Failed to map parentId' errors. What can I do?",
           answer: `This error indicates that something went wrong during the sync. The developers are aware of these errors and are working on fixing all instances of them. In the meantime you can try to trigger a sync from scratch in the settings of the profile that errored. Make sure you have a backup of your bookmarks before you do this, and check your bookmarks for deleted bookmarks that may have come back. You can be sure that nothing will be deleted in this step, though.`,
         },
         {
-          question: "I'm seeing 'E035: Failed to create bookmark on the server' errors . What can I do?",
+          question:
+            "I'm seeing 'E035: Failed to create bookmark on the server' errors . What can I do?",
           answer: `This error can happen with older versions of Nextcloud Bookmarks. An update to the latest version should fix this. If it doesn't, please file an issue on the floccus or Nextcloud Bookmarks github repositories.`,
         },
         {
-          question: "I'm seeing 404 errors with the Linkwarden sync method. What can I do?",
+          question:
+            "I'm seeing 404 errors with the Linkwarden sync method. What can I do?",
           answer: `This error can happen with older versions of Linkwarden. An update to the latest version should fix this. If it doesn't, please file an issue on the floccus github repository.`,
         },
         {
-          question: "I am receiving a 401 HTTP error when trying to set up Floccus with Git.  What can I do?",
+          question:
+            'I am receiving a 401 HTTP error when trying to set up Floccus with Git.  What can I do?',
           answer: `Try setting up a device token and using that instead of your personal password. The steps for this can vary depending on the service you are using, but you can find more information here: https://github.com/floccusaddon/floccus/discussions/1655`,
         },
         {
-          question: "I'm seeing 'E034: Remote bookmarks file is unreadable.' errors. What can I do?",
+          question:
+            "I'm seeing 'E034: Remote bookmarks file is unreadable.' errors. What can I do?",
           answer: `This error can happen e.g. after you have shutdown your computer while floccus was running. Sometimes that leads to only parts of the bookmarks file getting uploaded, which floccus notices and stops the sync. You can remedy this situation by deleting the file on the server and triggering a sync with floccus, ideally on the device that you last made changes on. Floccus will then re-upload the whole file.`,
         },
         {
@@ -165,10 +172,33 @@ After two hours of trying floccus should override the lock and finally start syn
           answer: `Yes, since floccus v5.6 you should be able to install the extension from the Chrome Web Store. (You may have to restart the browser once before it starts working.)`,
         },
         {
-          question: "When logging in with Google, I get the following error: 'You can't sign in to this app because it doesn't comply with Google's OAuth 2.0 policy for keeping apps secure.' What can I do?",
+          question:
+            "When logging in with Google, I get the following error: 'You can't sign in to this app because it doesn't comply with Google's OAuth 2.0 policy for keeping apps secure.' What can I do?",
           answer: `You're likely using a browser that is not supported by Google's OAuth login service, e.g. Ungoogled Chromium is such a browser. You can still set up a Google Drive sync profile by setting it up on a supported browser, exporting that profile to a file and importing it into the unsupported browser.`,
         },
-      ].map(faq => ({...faq, show: false})),
+        {
+          question:
+            "I get the following error: 'Failsafe: The current sync run would delete x% of your local/remote links in this profile.'",
+          answer: `The error means that floccus' failsafe has kicked in, which prevents floccus from unintended deletion of too much data (or unintended duplication). This may happen because somehow the file on your server got emptied or you deleted a lot of bookmarks (or tabs) in one go on the current or a different device.
+
+If the local bookmarks in the current browser are correct, You can
+
+1. Go to the settings for your floccus profile
+2. Disable the failsafe
+3. Set the sync strategy to "Upload local changes and revert changes from other browsers".
+4. Click "Save"
+5. Then click sync in the floccus overview panel. This will push the state of your bookmarks on that browser to the server, after that normal sync should succeed again without the failsafe kicking in. That means you can Enable the failsafe again now and set sync strategy back to merge.
+
+If, on the other hand, the state on the server is the correct version of your set of bookmarks, you can
+
+1. Go to the settings for your floccus profile
+2. Disable the failsafe
+3. Set the sync strategy to "Revert local changes and download changes from other browsers".
+4. Click "Save"
+5. Then click sync in the floccus overview panel. This will force the current state of the server onto your browser, after that normal sync should succeed again without the failsafe kicking in. That means you can Enable the failsafe again now and set sync strategy back to merge.
+`,
+        },
+      ].map((faq) => ({ ...faq, show: false })),
     }
     ret.filteredFaqs = ret.faqs
     return ret
@@ -180,15 +210,34 @@ After two hours of trying floccus should override the lock and finally start syn
         return
       }
       const queries = this.searchQuery.toLowerCase().split(' ')
-      this.filteredFaqs = this.faqs.filter(faq => queries.every(query => faq.question.toLowerCase().includes(query)) || queries.every(query => faq.answer.toLowerCase().includes(query)))
-    }
+      this.filteredFaqs = this.faqs.filter(
+        (faq) =>
+          queries.every((query) =>
+            faq.question.toLowerCase().includes(query)
+          ) ||
+          queries.every((query) => faq.answer.toLowerCase().includes(query))
+      )
+    },
   },
   head: {
     title: 'Frequently Asked Questions',
     meta: [
-      { hid: 'description', name: 'description', content: 'Floccus offers seamless cross-browser bookmarks syncing, here you can find all the answers to your questions.' },
-      { hid: 'og:title', property: 'og:title', content: 'Frequently Asked Questions - Floccus bookmarks sync' },
-      { hid: "twitter:title", name: "twitter:title", content: 'Frequently Asked Questions - Floccus bookmarks sync' },
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'Floccus offers seamless cross-browser bookmarks syncing, here you can find all the answers to your questions.',
+      },
+      {
+        hid: 'og:title',
+        property: 'og:title',
+        content: 'Frequently Asked Questions - Floccus bookmarks sync',
+      },
+      {
+        hid: 'twitter:title',
+        name: 'twitter:title',
+        content: 'Frequently Asked Questions - Floccus bookmarks sync',
+      },
     ],
   },
 }
