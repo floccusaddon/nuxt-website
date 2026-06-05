@@ -63,7 +63,7 @@
             Via a
             <v-tooltip bottom :max-width="250">
               <template #activator="{ on, attrs }">
-                <span v-on="on" v-bind="attrs"
+                <span v-bind="attrs" v-on="on"
                   ><a href="https://nextcloud.com">Nextcloud</a
                   ><v-icon dense>mdi-help-circle-outline</v-icon></span
                 >
@@ -77,7 +77,7 @@
             >,
             <v-tooltip bottom :max-width="250">
               <template #activator="{ on, attrs }">
-                <span v-on="on" v-bind="attrs"
+                <span v-bind="attrs" v-on="on"
                   ><a href="https://linkwarden.app">Linkwarden</a
                   ><v-icon dense>mdi-help-circle-outline</v-icon></span
                 >
@@ -90,7 +90,7 @@
             >,
             <v-tooltip bottom :max-width="250">
               <template #activator="{ on, attrs }">
-                <span v-on="on" v-bind="attrs"
+                <span v-bind="attrs" v-on="on"
                   ><a href="https://karakeep.app">KaraKeep</a
                   ><v-icon dense>mdi-help-circle-outline</v-icon></span
                 >
@@ -103,7 +103,7 @@
             >,
             <v-tooltip bottom :max-width="250">
               <template #activator="{ on, attrs }">
-                <span v-on="on" v-bind="attrs"
+                <span v-bind="attrs" v-on="on"
                   ><a href="https://en.wikipedia.org/wiki/Git">Git</a
                   ><v-icon dense>mdi-help-circle-outline</v-icon></span
                 >
@@ -119,7 +119,7 @@
             or
             <v-tooltip bottom :max-width="250">
               <template #activator="{ on, attrs }">
-                <span v-on="on" v-bind="attrs"
+                <span v-bind="attrs" v-on="on"
                   ><a href="https://en.wikipedia.org/wiki/WebDAV">WebDAV</a
                   ><v-icon dense>mdi-help-circle-outline</v-icon></span
                 >
@@ -134,7 +134,7 @@
             server for easy self-hosting or simply via
             <v-tooltip bottom :max-width="250">
               <template #activator="{ on, attrs }">
-                <span v-on="on" v-bind="attrs"
+                <span v-bind="attrs" v-on="on"
                   ><a href="https://drive.google.com">Google Drive</a
                   ><v-icon dense>mdi-help-circle-outline</v-icon></span
                 >
@@ -149,15 +149,15 @@
             or
             <v-tooltip bottom :max-width="250">
               <template #activator="{ on, attrs }">
-                <span v-on="on" v-bind="attrs"
+                <span v-bind="attrs" v-on="on"
                   ><a href="https://drive.google.com">Dropbox</a
                   ><v-icon dense>mdi-help-circle-outline</v-icon></span
                 >
               </template>
               <span
-                >Almost everyone has a Dropbox account, so using it to
-                sync bookmarks is the simplest option. If you want to keep
-                things private, floccus has you covered with end-to-end
+                >Almost everyone has a Dropbox account, so using it to sync
+                bookmarks is the simplest option. If you want to keep things
+                private, floccus has you covered with end-to-end
                 encryption.</span
               > </v-tooltip
             >. Floccus simply syncs and gets out of your way; no ads, no data
@@ -175,6 +175,169 @@
         </v-col>
       </v-row>
       <v-row class="mt-12 d-block d-sm-flex">
+        <v-col class="col-12">
+          <h2>Feature matrix</h2>
+          <table tabindex="0" border="0">
+            <thead>
+              <tr>
+                <th align="left">Service / App</th>
+                <th align="left">Storage api</th>
+                <th align="left">Since release</th>
+                <th align="left">http / https bookmarks</th>
+                <th align="left">ftp ftps bookmarks</th>
+                <th align="left">javascript bookmarks</th>
+                <th align="left">data bookmarks</th>
+                <th align="left">file bookmarks</th>
+                <th align="left">E2EE</th>
+                <th align="left">Keep Order</th>
+                <th align="left">Mobile</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left">Nextcloud Bookmarks</td>
+                <td align="left">App</td>
+                <td align="left">
+                  <a
+                    href="https://github.com/floccusaddon/floccus/releases/tag/v3.1.0"
+                    >v3.1.0</a
+                  >
+                </td>
+                <td align="left">✅</td>
+                <td align="left">✅</td>
+                <td align="left">✅</td>
+                <td align="left">➖</td>
+                <td align="left">➖</td>
+                <td align="left">❌</td>
+                <td align="left">✅</td>
+                <td align="left">✅</td>
+              </tr>
+              <tr>
+                <td align="left">Linkwarden</td>
+                <td align="left">App</td>
+                <td align="left">
+                  <a
+                    href="https://github.com/floccusaddon/floccus/releases/tag/v5.3.0"
+                    >v5.3.0</a
+                  >
+                </td>
+                <td align="left">✅</td>
+                <td align="left">✅</td>
+                <td align="left">✅</td>
+                <td align="left">➖</td>
+                <td align="left">➖</td>
+                <td align="left">❌</td>
+                <td align="left">❌</td>
+                <td align="left">✅</td>
+              </tr>
+              <tr>
+                <td align="left">Karakeep</td>
+                <td align="left">App</td>
+                <td align="left">
+                  <a
+                    href="https://github.com/floccusaddon/floccus/releases/tag/v5.6.0"
+                    >v5.6.0</a
+                  >
+                </td>
+                <td align="left">✅</td>
+                <td align="left">➖</td>
+                <td align="left">➖</td>
+                <td align="left">➖</td>
+                <td align="left">➖</td>
+                <td align="left">❌</td>
+                <td align="left">❌</td>
+                <td align="left">✅</td>
+              </tr>
+              <tr>
+                <td align="left">WebDAV share</td>
+                <td align="left">xbel, html</td>
+                <td align="left">
+                  <a
+                    href="https://github.com/floccusaddon/floccus/releases/tag/v3.0.0"
+                    >v3.0.0</a
+                  >
+                </td>
+                <td align="left">✅</td>
+                <td align="left">✅</td>
+                <td align="left">✅</td>
+                <td align="left">✅</td>
+                <td align="left">✅</td>
+                <td align="left">(✅)</td>
+                <td align="left">✅</td>
+                <td align="left">✅</td>
+              </tr>
+              <tr>
+                <td align="left">Git over HTTPS</td>
+                <td align="left">xbel, html</td>
+                <td align="left">
+                  <a
+                    href="https://github.com/floccusaddon/floccus/releases/tag/v5.1.0"
+                    >v5.1.0</a
+                  >
+                </td>
+                <td align="left">✅</td>
+                <td align="left">✅</td>
+                <td align="left">✅</td>
+                <td align="left">✅</td>
+                <td align="left">✅</td>
+                <td align="left">❌</td>
+                <td align="left">✅</td>
+                <td align="left">❌</td>
+              </tr>
+              <tr>
+                <td align="left">Google Drive</td>
+                <td align="left">xbel, html</td>
+                <td align="left">
+                  <a
+                    href="https://github.com/floccusaddon/floccus/releases/tag/v4.6.0"
+                    >v4.6.0</a
+                  >
+                </td>
+                <td align="left">✅</td>
+                <td align="left">✅</td>
+                <td align="left">✅</td>
+                <td align="left">✅</td>
+                <td align="left">✅</td>
+                <td align="left">(✅)</td>
+                <td align="left">✅</td>
+                <td align="left">✅</td>
+              </tr>
+              <tr>
+                <td align="left">Dropbox</td>
+                <td align="left">xbel, html</td>
+                <td align="left">
+                  <a
+                    href="https://github.com/floccusaddon/floccus/releases/tag/v5.9.0"
+                    >v5.9.0</a
+                  >
+                </td>
+                <td align="left">✅</td>
+                <td align="left">✅</td>
+                <td align="left">✅</td>
+                <td align="left">✅</td>
+                <td align="left">✅</td>
+                <td align="left">(✅)</td>
+                <td align="left">✅</td>
+                <td align="left">✅</td>
+              </tr>
+              <tr>
+                <td align="left">OneDrive</td>
+                <td align="left"></td>
+                <td align="left">planned</td>
+                <td align="left"></td>
+                <td align="left"></td>
+                <td align="left"></td>
+                <td align="left"></td>
+                <td align="left"></td>
+                <td align="left"></td>
+                <td align="left"></td>
+                <td align="left"></td>
+              </tr>
+            </tbody>
+          </table>
+        </v-col>
+      </v-row>
+      <v-row class="mt-12 d-block d-sm-flex">
         <v-col class="col-12 col-sm-6">
           <v-img src="undraw_devices.svg" />
         </v-col>
@@ -183,9 +346,9 @@
             <v-card-title>Floccus on Mastodon</v-card-title>
             <v-card-text
               v-for="(post, i) in posts.slice(0, 1)"
-              v-html="post"
               :key="i"
               style="font-size: 1.2em !important"
+              v-html="post"
             />
             <span v-if="posts.length === 0"
               ><a href="https://fosstodon.org/@floccus">Loading posts</a></span
@@ -206,8 +369,8 @@
           <h2 class="mb-10 headline">What users are saying</h2>
           <v-card v-for="(post, i) in feedback" :key="i" class="mb-6">
             <v-card-text
-              v-html="post"
               style="font-size: 1.15em !important; font-style: italic"
+              v-html="post"
             />
           </v-card>
           <p>
@@ -309,3 +472,8 @@ export default {
   },
 }
 </script>
+<style>
+table td {
+  border-bottom: 1px solid #ccc;
+}
+</style>
