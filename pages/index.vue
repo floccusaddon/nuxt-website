@@ -208,7 +208,7 @@
                 <td align="left">✅</td>
                 <td align="left">➖</td>
                 <td align="left">➖</td>
-                <td align="left">❌</td>
+                <td align="left">➖</td>
                 <td align="left">✅</td>
                 <td align="left">✅</td>
               </tr>
@@ -226,8 +226,8 @@
                 <td align="left">✅</td>
                 <td align="left">➖</td>
                 <td align="left">➖</td>
-                <td align="left">❌</td>
-                <td align="left">❌</td>
+                <td align="left">➖</td>
+                <td align="left">➖</td>
                 <td align="left">✅</td>
               </tr>
               <tr>
@@ -244,8 +244,8 @@
                 <td align="left">➖</td>
                 <td align="left">➖</td>
                 <td align="left">➖</td>
-                <td align="left">❌</td>
-                <td align="left">❌</td>
+                <td align="left">➖</td>
+                <td align="left">➖</td>
                 <td align="left">✅</td>
               </tr>
               <tr>
@@ -280,9 +280,9 @@
                 <td align="left">✅</td>
                 <td align="left">✅</td>
                 <td align="left">✅</td>
-                <td align="left">❌</td>
+                <td align="left">➖</td>
                 <td align="left">✅</td>
-                <td align="left">❌</td>
+                <td align="left">➖</td>
               </tr>
               <tr>
                 <td align="left">Google Drive</td>
