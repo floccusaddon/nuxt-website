@@ -2,14 +2,24 @@
   <div>
     <v-row justify="center" align="center">
       <v-col class="col-8 col-md-4 flex-column d-flex justify-center">
-        <h1 class="headline">Support the creation of floccus</h1>
+        <h1 class="headline">Hi there, sorry to bug you…</h1>
         <p>&nbsp;</p>
         <p class="font-italic" style="font-size: 1.2em">
-          Hi<br/>
-          I'm Marcel Klehr, the creator of floccus. I'm an employee at Nextcloud GmbH but I spend my free time working to improve floccus to create an open source bookmark syncing solution for everyone.<br/>
-          My work on floccus is fuelled by a voluntary subscription model. If you think what I do is worthwhile, and if you can spare a few coins each month without hardship, please support my work.
-          Also, please consider giving floccus a review or rating on the addon store of your choice.<br/>
-          Thank you! 💙
+          You are seeing this because you are using <strong>floccus</strong>, the open source <strong>bookmark syncing</strong> tool.<br/>
+        </p>
+        <p class="font-italic" style="font-size: 1.2em">
+          I am <strong>Marcel</strong>, the creator of floccus. I'm an employee at Nextcloud but I currently spend one day of my work week, every week, to improve floccus to create an open source bookmark syncing solution for everyone.<br/>
+        </p>
+        <p class="font-italic" style="font-size: 1.2em">
+          This work on floccus is fuelled by a <strong>voluntary subscription model</strong>. In recent years, roughly 4% of all the people that use floccus decided to help support this work financially. If you think what I do is worthwhile, and if you can spare a few coins each month without hardship, <strong>please donate</strong>.
+        </p>
+        <p class="font-italic" style="font-size: 1.2em">
+          It would mean a lot to me!
+          <br/>
+          That's it. <strong>Thank you</strong> for your attention! 💙
+        </p>
+        <p class="font-italic" style="font-size: 1.2em">
+          PS: Also, please consider giving floccus <strong>a review</strong> or <strong>rating</strong> on the addon store of your choice, it really helps as well. ️✌️
         </p>
       </v-col>
       <v-col class="col-8 col-md-4">
