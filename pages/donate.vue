@@ -11,7 +11,7 @@
           I am <strong>Marcel</strong>, the creator of floccus. I'm an employee at Nextcloud but I currently spend one day of my work week, every week, to improve floccus to create an open source bookmark syncing solution for everyone.<br/>
         </p>
         <p class="font-italic" style="font-size: 1.2em">
-          This work on floccus is fuelled by a <strong>voluntary subscription model</strong>. In recent years, roughly 4% of all the people that use floccus decided to help support this work financially. If you think what I do is worthwhile, and if you can spare a few coins each month without hardship, <strong>please donate</strong>.
+          This work on floccus is fuelled by a <strong>voluntary subscription model</strong>. In recent years, roughly 2% of all the people that use floccus decided to help support this work financially. If you think what I do is worthwhile, and if you can spare a few coins each month without hardship, <strong>please donate</strong>.
         </p>
         <p class="font-italic" style="font-size: 1.2em">
           It would mean a lot to me!
