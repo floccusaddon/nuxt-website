@@ -15,7 +15,6 @@
   },
   "dependencies": {
     "@nuxtjs/markdownit": "2.x",
-    "@sentry/browser": "8.x",
     "core-js": "^3.19.3",
     "nuxt": "2.x",
     "vue": "^2.6.14",
