@@ -8,11 +8,12 @@ The Floccus browser extension ("Floccus") provides browser bookmarks synchroniza
 
 ## Information floccus collects
 
-**Debug log.** Floccus creates a debug log of all its actions, which is only accessible to you and may be shared by you at your sole discretion with the authors in order to aid in debugging.
+**Debug log.** Floccus creates a debug log of all its actions, which is only accessible to you and may be shared by you at your sole discretion with the authors in order to aid in debugging. Note that the debug log may contain bookmark data, server URLs,
+and account names.
 
 ## Information shared with others
 
-Neither the authors of Floccus nor the publisher receive any of the data you provide to Floccus. The authors cannot make any assurances about how the Third-party services you choose to store your bookmarks on will handle the data you provide.
+Neither the authors of Floccus nor the publisher (the service where was downloaded from; this may be Google, F-Droid, Apple, Mozilla or Microsoft) receive any of the data you provide to Floccus. The authors cannot make any assurances about how the Third-party services you choose to store your bookmarks on will handle the data you provide.
 
 ## License
 
@@ -27,4 +28,5 @@ Adalbert-Stifter-Straße 2
 76275 Ettlingen
 Germany
 
-Effective as of Sep 28, 2018
+ * Effective as of Sep 28, 2018
+ * Updated on July 25, 2026 to clarify some details
