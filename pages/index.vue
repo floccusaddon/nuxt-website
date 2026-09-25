@@ -172,6 +172,7 @@
       <v-row class="mt-12 d-block d-sm-flex">
         <v-col class="col-12">
           <v-img src="floccus_schema_with_notes.png" />
+          <p>Note that <em>Safari</em> is currently not supported due to technical limitations.</p>
         </v-col>
       </v-row>
       <v-row class="mt-12 d-block d-sm-flex">
@@ -335,6 +336,8 @@
               </tr>
             </tbody>
           </table>
+          <p>&nbsp;</p>
+          <p>Note that <em>mobile support</em> means the feature is available in the floccus mobile app, which currently only syncs to a folder in the mobile app, not to mobile browsers. Floccus support across available mobile browsers is currently sparse.</p>
         </v-col>
       </v-row>
       <v-row class="mt-12 d-block d-sm-flex">
