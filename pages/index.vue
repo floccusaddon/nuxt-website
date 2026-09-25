@@ -35,8 +35,11 @@
           colored-border
           outlined
         >
-          <strong>New in Version 5.9 ✨</strong> You can now sync with
-          <a href="https://dropbox.com">Dropbox</a>!
+          <strong>News</strong> Floccus wins a
+          <a
+            href="https://nextcloud.com/blog/meet-the-winners-of-the-nextcloud-community-awards-2026/"
+            >Nextcloud Community Award 2026</a
+          >! 🏆✨
         </v-alert>
       </v-row>
       <v-row class="d-block d-sm-flex">
@@ -172,7 +175,10 @@
       <v-row class="mt-12 d-block d-sm-flex">
         <v-col class="col-12">
           <v-img src="floccus_schema_with_notes.png" />
-          <p>Note that <em>Safari</em> is currently not supported due to technical limitations.</p>
+          <p>
+            Note that <em>Safari</em> is currently not supported due to
+            technical limitations.
+          </p>
         </v-col>
       </v-row>
       <v-row class="mt-12 d-block d-sm-flex">
@@ -337,7 +343,12 @@
             </tbody>
           </table>
           <p>&nbsp;</p>
-          <p>Note that <em>mobile support</em> means the feature is available in the floccus mobile app, which currently only syncs to a folder in the mobile app, not to mobile browsers. Floccus support across available mobile browsers is currently sparse.</p>
+          <p>
+            Note that <em>mobile support</em> means the feature is available in
+            the floccus mobile app, which currently only syncs to a folder in
+            the mobile app, not to mobile browsers. Floccus support across
+            available mobile browsers is currently sparse.
+          </p>
         </v-col>
       </v-row>
       <v-row class="mt-12 d-block d-sm-flex">
