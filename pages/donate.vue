@@ -5,21 +5,32 @@
         <h1 class="headline">Hi there, sorry to bug you…</h1>
         <p>&nbsp;</p>
         <p class="font-italic" style="font-size: 1.2em">
-          You are seeing this because you are using <strong>floccus</strong>, the open source <strong>bookmark syncing</strong> tool.<br/>
+          You are seeing this because you are using <strong>floccus</strong>,
+          the open source <strong>bookmark syncing</strong> tool.<br />
         </p>
         <p class="font-italic" style="font-size: 1.2em">
-          I am <strong>Marcel</strong>, the creator of floccus. I'm an employee at Nextcloud but I currently spend one day of my work week, every week, to improve floccus to create an open source bookmark syncing solution for everyone.<br/>
+          I am <strong>Marcel</strong>, the creator of floccus. I'm an employee
+          at Nextcloud but I currently spend one day of my work week, every
+          week, to improve floccus to create an open source bookmark syncing
+          solution for everyone.<br />
         </p>
         <p class="font-italic" style="font-size: 1.2em">
-          This work on floccus is fuelled by a <strong>voluntary subscription model</strong>. In recent years, roughly 2% of all the people that use floccus decided to help support this work financially. If you think what I do is worthwhile, and if you can spare a few coins each month without hardship, <strong>please donate</strong>.
+          This work on floccus is fuelled by a
+          <strong>voluntary subscription model</strong>. In recent years,
+          roughly 2% of all the people that use floccus decided to help support
+          this work financially. If you think what I do is worthwhile, and if
+          you can spare a few coins each month without hardship,
+          <strong>please donate</strong>.
         </p>
         <p class="font-italic" style="font-size: 1.2em">
           It would mean a lot to me!
-          <br/>
+          <br />
           That's it. <strong>Thank you</strong> for your attention! 💙
         </p>
         <p class="font-italic" style="font-size: 1.2em">
-          PS: Also, please consider giving floccus <strong>a review</strong> or <strong>rating</strong> on the addon store of your choice, it really helps as well. ️✌️
+          PS: Also, please consider giving floccus <strong>a review</strong> or
+          <strong>rating</strong> on the addon store of your choice, it really
+          helps as well. ️✌️
         </p>
       </v-col>
       <v-col class="col-8 col-md-4">
@@ -34,16 +45,35 @@
     </v-row>
     <v-row justify="center" align="center">
       <v-col cols="10" md="8" class="d-flex flex-wrap">
-        <v-btn href="https://github.com/sponsors/marcelklehr" class="mt-2 mr-2 col-lg-5">GitHub Sponsors</v-btn>
-        <v-btn href="https://liberapay.com/marcelklehr/donate" class="mt-2 mr-2 col-lg-5">Liberapay</v-btn>
-        <v-btn href="https://opencollective.com/floccus" class="mt-2 mr-2 col-lg-5">OpenCollective</v-btn>
-        <v-btn href="https://www.paypal.com/donate/?hosted_button_id=R3SDCC7AFSYZU" class="mt-2 mr-2 col-lg-5">PayPal</v-btn>
-        <v-dialog
-          v-model="showWero"
-          width="500"
+        <v-btn
+          href="https://github.com/sponsors/marcelklehr"
+          class="mt-2 mr-2 col-lg-5"
+          >GitHub Sponsors</v-btn
         >
+        <v-btn
+          href="https://liberapay.com/marcelklehr/donate"
+          class="mt-2 mr-2 col-lg-5"
+          >Liberapay</v-btn
+        >
+        <v-btn
+          href="https://opencollective.com/floccus"
+          class="mt-2 mr-2 col-lg-5"
+          >OpenCollective</v-btn
+        >
+        <v-btn
+          href="https://www.paypal.com/donate/?hosted_button_id=R3SDCC7AFSYZU"
+          class="mt-2 mr-2 col-lg-5"
+          >PayPal</v-btn
+        >
+        <v-dialog v-model="showWero" width="500">
           <template #activator="{ on, attrs }">
-            <v-btn class="mt-2 mr-2 col-lg-5" v-bind="attrs" @click="showWero = true" v-on="on">Wero</v-btn>
+            <v-btn
+              class="mt-2 mr-2 col-lg-5"
+              v-bind="attrs"
+              @click="showWero = true"
+              v-on="on"
+              >Wero</v-btn
+            >
           </template>
 
           <v-card>
@@ -59,22 +89,28 @@
               <v-img src="/wero-qr-code.svg" />
             </v-card-text>
 
+            <v-card-text>
+              Alternatively, search for <code>me@marcelklehr.de</code> in the Wero app to find my profile and donate this way.
+            </v-card-text>
+
             <v-divider></v-divider>
 
             <v-card-actions>
               <v-spacer></v-spacer>
-              <v-btn
-                color="primary"
-                text
-                @click="showWero = false"
-              >
+              <v-btn color="primary" text @click="showWero = false">
                 Done
               </v-btn>
             </v-card-actions>
           </v-card>
         </v-dialog>
-        <v-btn href="https://www.patreon.com/marcelklehr" class="mt-2 mr-2 col-lg-5">Patreon</v-btn>
-        <v-btn href="https://ko-fi.com/marcelklehr" class="mt-2 mr-2 col-lg-5">Ko-fi</v-btn>
+        <v-btn
+          href="https://www.patreon.com/marcelklehr"
+          class="mt-2 mr-2 col-lg-5"
+          >Patreon</v-btn
+        >
+        <v-btn href="https://ko-fi.com/marcelklehr" class="mt-2 mr-2 col-lg-5"
+          >Ko-fi</v-btn
+        >
       </v-col>
     </v-row>
     <v-row justify="center" align="center" class="mt-9">
@@ -85,12 +121,36 @@
     </v-row>
     <v-row justify="center" align="center">
       <v-col cols="10" md="8" class="d-flex flex-wrap">
-        <v-btn href="https://play.google.com/store/apps/details?id=org.handmadeideas.floccus" class="mt-2 mr-2 col-lg-5">Google Play</v-btn>
-        <v-btn href="https://apps.apple.com/us/app/floccus/id1626998357" class="mt-2 mr-2 col-lg-5">Apple App Store</v-btn>
-        <v-btn href="https://alternativeto.net/software/floccus/about/" class="mt-2 mr-2 col-lg-5">AlternativeTo</v-btn>
-        <v-btn href="https://addons.mozilla.org/de/firefox/addon/floccus/reviews/" class="mt-2 mr-2 col-lg-5">Firefox Addons</v-btn>
-        <v-btn href="https://chromewebstore.google.com/detail/floccus-bookmarks-sync/fnaicdffflnofjppbagibeoednhnbjhg" class="mt-2 mr-2 col-lg-5">Chrome Webstore</v-btn>
-        <v-btn href="https://microsoftedge.microsoft.com/addons/detail/floccus-bookmarks-sync/gjkddcofhiifldbllobcamllmanombji" class="mt-2 mr-2 col-lg-5">Edge Addons</v-btn>
+        <v-btn
+          href="https://play.google.com/store/apps/details?id=org.handmadeideas.floccus"
+          class="mt-2 mr-2 col-lg-5"
+          >Google Play</v-btn
+        >
+        <v-btn
+          href="https://apps.apple.com/us/app/floccus/id1626998357"
+          class="mt-2 mr-2 col-lg-5"
+          >Apple App Store</v-btn
+        >
+        <v-btn
+          href="https://alternativeto.net/software/floccus/about/"
+          class="mt-2 mr-2 col-lg-5"
+          >AlternativeTo</v-btn
+        >
+        <v-btn
+          href="https://addons.mozilla.org/de/firefox/addon/floccus/reviews/"
+          class="mt-2 mr-2 col-lg-5"
+          >Firefox Addons</v-btn
+        >
+        <v-btn
+          href="https://chromewebstore.google.com/detail/floccus-bookmarks-sync/fnaicdffflnofjppbagibeoednhnbjhg"
+          class="mt-2 mr-2 col-lg-5"
+          >Chrome Webstore</v-btn
+        >
+        <v-btn
+          href="https://microsoftedge.microsoft.com/addons/detail/floccus-bookmarks-sync/gjkddcofhiifldbllobcamllmanombji"
+          class="mt-2 mr-2 col-lg-5"
+          >Edge Addons</v-btn
+        >
       </v-col>
     </v-row>
   </div>
@@ -107,10 +167,23 @@ export default {
   head: {
     title: 'Support floccus',
     meta: [
-      { hid: 'description', name: 'description', content: 'Floccus offers seamless cross-browser bookmarks syncing. Work on floccus is fuelled by a voluntary subscription model. If you think what I do is worthwhile, and if you can spare a few coins each month without hardship, please support my work.' },
-      { hid: 'og:title', property: 'og:title', content: 'Support Floccus - Floccus bookmarks sync' },
-      { hid: "twitter:title", name: "twitter:title", content: 'Support Floccus - Floccus bookmarks sync' },
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'Floccus offers seamless cross-browser bookmarks syncing. Work on floccus is fuelled by a voluntary subscription model. If you think what I do is worthwhile, and if you can spare a few coins each month without hardship, please support my work.',
+      },
+      {
+        hid: 'og:title',
+        property: 'og:title',
+        content: 'Support Floccus - Floccus bookmarks sync',
+      },
+      {
+        hid: 'twitter:title',
+        name: 'twitter:title',
+        content: 'Support Floccus - Floccus bookmarks sync',
+      },
     ],
-  }
+  },
 }
 </script>
