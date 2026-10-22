@@ -90,7 +90,8 @@
             </v-card-text>
 
             <v-card-text>
-              Alternatively, search for <code>me@marcelklehr.de</code> in the Wero app to find my profile and donate this way.
+              Alternatively, search for <code>me@marcelklehr.de</code> in the
+              Wero app to find my profile and donate this way.
             </v-card-text>
 
             <v-divider></v-divider>
@@ -98,6 +99,38 @@
             <v-card-actions>
               <v-spacer></v-spacer>
               <v-btn color="primary" text @click="showWero = false">
+                Done
+              </v-btn>
+            </v-card-actions>
+          </v-card>
+        </v-dialog>
+        <v-dialog v-model="showSepa" width="500">
+          <template #activator="{ on, attrs }">
+            <v-btn
+              class="mt-2 mr-2 col-lg-5"
+              v-bind="attrs"
+              @click="showSepa = true"
+              v-on="on"
+              >SEPA</v-btn
+            >
+          </template>
+
+          <v-card>
+            <v-card-title class="text-h5 grey lighten-2">
+              Donate via SEPA money transfer
+            </v-card-title>
+
+            <v-card-text>
+              <code>Account holder: Marcel Klehr</code><br />
+              <code>IBAN: DE98 1203 0000 1313 9691 96</code><br />
+              <code>BIC: BYLADEM1001</code>
+            </v-card-text>
+
+            <v-divider></v-divider>
+
+            <v-card-actions>
+              <v-spacer></v-spacer>
+              <v-btn color="primary" text @click="showSepa = false">
                 Done
               </v-btn>
             </v-card-actions>
@@ -162,6 +195,7 @@ export default {
   data() {
     return {
       showWero: false,
+      showSepa: false,
     }
   },
   head: {
