@@ -35,11 +35,7 @@
           colored-border
           outlined
         >
-          <strong>News</strong> Floccus wins a
-          <a
-            href="https://nextcloud.com/blog/meet-the-winners-of-the-nextcloud-community-awards-2026/"
-            >Nextcloud Community Award 2026</a
-          >! 🏆✨
+          <strong>News</strong> Git sync support comes to floccus on Android and iOS with v5.11!
         </v-alert>
       </v-row>
       <v-row class="d-block d-sm-flex">
