@@ -111,13 +111,13 @@
               v-bind="attrs"
               @click="showSepa = true"
               v-on="on"
-              >SEPA</v-btn
+              >Bank wire</v-btn
             >
           </template>
 
           <v-card>
             <v-card-title class="text-h5 grey lighten-2">
-              Donate via SEPA money transfer
+              Donate via bank wire
             </v-card-title>
 
             <v-card-text>
