@@ -47,8 +47,10 @@ import install from '~/guides/install-browser.md'
 import installAndroid from '~/guides/install-android.md'
 import syncNcBookmarks from '~/guides/sync-nextcloud-bookmarks.md'
 import syncLinkwarden from '~/guides/sync-linkwarden.md'
+import syncKarakeep from '~/guides/sync-karakeep.md'
 import syncWebdav from '~/guides/sync-webdav.md'
 import syncGDrive from '~/guides/sync-googledrive.md'
+import syncDropbox from '~/guides/sync-dropbox.md'
 import syncGit from '~/guides/sync-git.md'
 import strategies from '~/guides/strategies.md'
 import tabs from '~/guides/tabs.md'
@@ -85,6 +87,11 @@ export default {
           show: false,
         },
         {
+          title: 'Sync with Karakeep',
+          content: syncKarakeep,
+          show: false,
+        },
+        {
           title: 'Sync via WebDAV',
           content: syncWebdav,
           show: false,
@@ -92,6 +99,11 @@ export default {
         {
           title: 'Sync via Google Drive',
           content: syncGDrive,
+          show: false,
+        },
+        {
+          title: 'Sync via Dropbox',
+          content: syncDropbox,
           show: false,
         },
         {
