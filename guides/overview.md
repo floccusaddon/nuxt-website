@@ -5,11 +5,14 @@ Floccus is just a syncing tool: It synchronizes your browser's native bookmarks 
 For this to work you need a syncing server, a middle man, if you will, that all your devices can access. Floccus currently offers some
 choice here. The simplest choice is to go and use Google Drive for this. If you don't want Google to know your bookmarks, just encrypt them.
 
-If you don't have Google Drive or don't want to use it, using WebDAV may be an option. There are many cloud storage services out there that support WebDAV.
+If you prefer Dropbox, you can store your bookmarks there instead, also optionally encrypted.
+
+If you don't have Google Drive or Dropbox or don't want to use them, using WebDAV may be an option. There are many cloud storage services out there that support WebDAV.
 Checkout [this list the Cryptomator Community created](https://community.cryptomator.org/t/webdav-urls-of-common-cloud-storage-services/75) to see if your provider offers WebDAV.
+If you'd rather keep your bookmarks in a Git repository, e.g. on GitHub, GitLab or Gitea, you can sync via Git as well.
 
 If you want a very easy solution, you can sync your bookmarks via Linkwarden. Linkwarden is an Open Source web app that manages your bookmarks. You can host it yourself on your own server, but
-you can also simply signup on their hosted solution at [linkwarden.app](https://linkwarden.app). You can then also access and manage your bookmarks on the go, say from an internet café in Malawi, by simply logging into Linkwarden with any web browser.
+you can also simply signup on their hosted solution at [linkwarden.app](https://linkwarden.app). You can then also access and manage your bookmarks on the go, say from an internet café in Malawi, by simply logging into Linkwarden with any web browser. Karakeep is another open source bookmarks manager that you can host yourself and sync with floccus in the same way.
 
 Similar to Linkwarden, but perhaps a bit more involved is syncing via Nextcloud Bookmarks. Nextcloud is an open source cloud collaboration tool that you can self-host or rent as a service.
 Nextcloud offers a multitude of apps to collaborate and share work over, chief amongst them, the Bookmarks app. If you have a Nextcloud installation available,

@@ -64,13 +64,19 @@ export default {
         {
           question: 'Which browsers are supported by floccus?',
           answer:
-            'Currently floccus supports Chromium, Google Chrome, Mozilla Firefox, Microsoft Edge, Opera, Brave, Vivaldi and Orion. Safari is currently not supported.',
+            'Currently floccus supports Chromium, Google Chrome, Mozilla Firefox, Microsoft Edge, Opera, Brave, Vivaldi and Orion. Safari is currently not supported, but on iPhone and iPad you can use the floccus iOS app.',
         },
         {
           question: 'How can I access my bookmarks on my Android phone?',
-          answer: `A Floccus Android app is available in an open beta [from the Downloads page](/download)
+          answer: `A Floccus Android app is available [from the Downloads page](/download).
 
-The only mobile browser to support extensions that interact with bookmarks is currently the free Kiwi browser.`,
+For technical reasons, the app does not sync your bookmarks with your mobile browser, but makes them available directly in the app itself instead. You can share links from your browser or other apps to the floccus app for bookmarking and open your bookmarks in your favorite browser.`,
+        },
+        {
+          question: 'How can I access my bookmarks on my iPhone or iPad?',
+          answer: `A Floccus iOS app is available [from the App Store](https://apps.apple.com/us/app/floccus/id1626998357), see also the [Downloads page](/download).
+
+Just like on Android, the app does not sync your bookmarks with Safari or other mobile browsers, but makes them available directly in the app itself instead. You can share links from Safari or other apps to the floccus app for bookmarking and open your bookmarks in your favorite browser.`,
         },
         {
           question: 'When will floccus be available for Firefox on Android?',
@@ -79,7 +85,7 @@ The only mobile browser to support extensions that interact with bookmarks is cu
         {
           question:
             'Does floccus sync my bookmarks with end-to-end encryption?',
-          answer: `Floccus offers multiple sync methods. Only the WebDAV and the Google Drive option allow setting an encryption password to sync with end-to-end encryption. Syncing via Nextcloud Bookmarks or Git is not possible in end-to-end encrypted fashion with floccus.`,
+          answer: `Floccus offers multiple sync methods. Only the WebDAV, Google Drive and Dropbox options allow setting an encryption password to sync with end-to-end encryption. Syncing via Nextcloud Bookmarks, Linkwarden, Karakeep or Git is not possible in end-to-end encrypted fashion with floccus.`,
         },
         {
           question: 'Does floccus support bookmarks tags in Firefox?',
@@ -90,33 +96,39 @@ The only mobile browser to support extensions that interact with bookmarks is cu
         {
           question: 'Does floccus support separators in Firefox?',
           answer:
-            "Yes. Separators are synced even to Browsers that don't support them natively using bookmarks as substitutes. When using Nextcloud Bookmarks you currently can only have one separator per folder.",
+            "Yes. Separators are synced even to browsers that don't support them natively, using bookmarks as substitutes.",
         },
 
         {
           question: 'How are browser-internal URLs treated?',
           answer:
-            'Browser-internal URLs like `chrome://` URLs are only synced with WebDAV or Google Drive and only with chrome-based browsers.',
+            'Browser-internal URLs like `chrome://` URLs are only synced with WebDAV, Google Drive, Dropbox or Git and only with chrome-based browsers.',
         },
         {
           question: 'How are non-HTTP URLs treated?',
           answer:
-            'Nextcloud Bookmarks currently only supports `http(s):` and `javascript:` links, URLs with any other schemes are ignored and left alone, when syncing via Nextcloud Bookmarks.\n' +
+            'Nextcloud Bookmarks currently only supports `http(s):`, `ftp:` and `javascript:` links, URLs with any other schemes are ignored and left alone, when syncing via Nextcloud Bookmarks.\n' +
             '\n' +
-            'When syncing via WebDAV or Google Drive, `http(s):`, `ftp:`, `data:`, `chrome:` and `javascript:` bookmarks are supported.' +
+            'When syncing via WebDAV, Google Drive, Dropbox or Git, `http(s):`, `ftp:`, `data:`, `file:`, `javascript:` and browser-internal links (e.g. `chrome:`, `edge:`, `about:`) are supported.' +
             '\n\n' +
-            'When syncing via Linkwarden or KaraKeep, only `http(s):`, `ftp:` and `javascript:` links are supported.',
+            'When syncing via Linkwarden, only `http(s):`, `ftp:` and `javascript:` links are supported. When syncing via Karakeep, only `http(s):` links are supported.',
         },
         {
           question: 'Does floccus track usage data at all?',
           answer:
-            "No. By default floccus does not track you in any way. The only network traffic initiated by floccus is syncing your bookmarks to the server of your choosing. That's it. If you enable Automated Error reporting, floccus sends the errors you see to Sentry, so that the developers have insight into what's going wrong for users.",
+            "No. By default floccus does not track you in any way. The only network traffic initiated by floccus is syncing your bookmarks to the server of your choosing. That's it.",
         },
         {
           question: 'How does floccus treat my cloud credentials?',
           answer: `As Floccus uses OAuth to connect to your Google Drive, it doesn't know and doesn't record your Google password. Instead, floccus stores an authentication token which can only be used to create new files and change the files created with the same token in your Google Drive. Not even floccus can access any other data stored in your Google services.
 
+Dropbox works the same way: floccus uses OAuth to connect to your Dropbox and never sees your Dropbox password.
+
 For Nextcloud you have the option to use your normal account password, or create a dedicated app token that you can revoke at any time.
+
+For Linkwarden and Karakeep you need to generate a dedicated access token (API key) in their settings, your account password is not used.
+
+For Git you can use your password, but it is recommended to use a dedicated access token from your Git hosting provider.
 
 For WebDAV, only a normal password can be used.
 
@@ -131,7 +143,7 @@ Floccus only stores the data you provide in your browser and doesn't send them a
         {
           question:
             'Some of my topmost folders are missing in one of my browsers. How can I avoid this?',
-          answer: `Browsers usually do not allow you to create items in the toplevel root folder (/), that space is reserved for special folders like Mobile bookmarks, Bookmarks bar, Other bookmarks. Any attempts by floccus to create items inside the root folder (whether in Kiwi or on any other Browser) will fail. The intention is that the built-in Sync mechanism of the browser vendor or some other native browser process will create and manage these folders, so it's by design that extensions are not able to write to it.
+          answer: `Browsers usually do not allow you to create items in the toplevel root folder (/), that space is reserved for special folders like Mobile bookmarks, Bookmarks bar, Other bookmarks. Any attempts by floccus to create items inside the root folder will fail. The intention is that the built-in Sync mechanism of the browser vendor or some other native browser process will create and manage these folders, so it's by design that extensions are not able to write to it.
 
 If you are missing some toplevel folders on a browser, try setting a different local folder to sync to in the floccus settings. E.g. instead of syncing to the absolute root folder, sync to a folder one level deeper, like Bookmarks Bar on Desktop or Mobile Bookmarks on mobile.`,
         },
@@ -140,11 +152,11 @@ If you are missing some toplevel folders on a browser, try setting a different l
             "Floccus suddenly shows status as 'Scheduled' and tells me to wait without doing anything. What can I do?",
           answer: `Floccus employs a locking mechanism to avoid manipulating data on the server from two browsers at the same time. Sometimes, when closing a browser while floccus is syncing, this lock is not removed. On the next browser start floccus will then wait for the lock to be released and will tell you to wait while it's doing nothing.
 
-After two hours of trying floccus should override the lock and finally start syncing again. If this doesn't happen for you, please have a look at the issues section on the floccus github repository and perhaps file a new issue there.`,
+If the lock isn't released, floccus should override it after 15 minutes (when syncing via WebDAV, Google Drive, Dropbox or Git) and finally start syncing again. If this doesn't happen for you, please have a look at the issues section on the floccus github repository and perhaps file a new issue there.`,
         },
         {
           question:
-            "I'm seeing 'Failed to map parentId' errors. What can I do?",
+            "I'm seeing 'E048: Failed to map ID' errors. What can I do?",
           answer: `This error indicates that something went wrong during the sync. The developers are aware of these errors and are working on fixing all instances of them. In the meantime you can try to trigger a sync from scratch in the settings of the profile that errored. Make sure you have a backup of your bookmarks before you do this, and check your bookmarks for deleted bookmarks that may have come back. You can be sure that nothing will be deleted in this step, though.`,
         },
         {
@@ -179,18 +191,18 @@ After two hours of trying floccus should override the lock and finally start syn
         {
           question:
             "When logging in with Google, I get the following error: 'You can't sign in to this app because it doesn't comply with Google's OAuth 2.0 policy for keeping apps secure.' What can I do?",
-          answer: `You're likely using a browser that is not supported by Google's OAuth login service, e.g. Ungoogled Chromium is such a browser. You can still set up a Google Drive sync profile by setting it up on a supported browser, exporting that profile to a file and importing it into the unsupported browser.`,
+          answer: `You're likely using a browser that is not supported by Google's OAuth login service, e.g. Ungoogled Chromium is such a browser. Unfortunately, you cannot work around this by exporting a profile from a supported browser, since Google logins cannot be transferred between devices and imported Google Drive profiles need you to log in again. Please use a different sync method in this browser, e.g. Dropbox, WebDAV or Git.`,
         },
         {
           question:
             "I get the following error: 'Failsafe: The current sync run would delete x% of your local/remote links in this profile.'",
-          answer: `The error means that floccus' failsafe has kicked in, which prevents floccus from unintended deletion of too much data (or unintended duplication). This may happen because somehow the file on your server got emptied or you deleted a lot of bookmarks (or tabs) in one go on the current or a different device.
+          answer: `The error means that floccus' failsafe has kicked in, which prevents floccus from unintended deletion of too much data (or unintended duplication). By default, floccus refuses to delete more than 20% of your links or to add more than 20% to your links count in one go. This may happen because somehow the file on your server got emptied or you deleted a lot of bookmarks (or tabs) in one go on the current or a different device.
 
 If the local bookmarks in the current browser are correct, You can
 
 1. Go to the settings for your floccus profile
 2. Disable the failsafe
-3. Set the sync strategy to "Upload local changes and revert changes from other browsers".
+3. Set the sync strategy to "Always upload local changes and undo changes from other browsers".
 4. Click "Save"
 5. Then click sync in the floccus overview panel. This will push the state of your bookmarks on that browser to the server, after that normal sync should succeed again without the failsafe kicking in. That means you can Enable the failsafe again now and set sync strategy back to merge.
 
@@ -198,7 +210,7 @@ If, on the other hand, the state on the server is the correct version of your se
 
 1. Go to the settings for your floccus profile
 2. Disable the failsafe
-3. Set the sync strategy to "Revert local changes and download changes from other browsers".
+3. Set the sync strategy to "Always undo local changes and download changes from other browsers".
 4. Click "Save"
 5. Then click sync in the floccus overview panel. This will force the current state of the server onto your browser, after that normal sync should succeed again without the failsafe kicking in. That means you can Enable the failsafe again now and set sync strategy back to merge.
 `,

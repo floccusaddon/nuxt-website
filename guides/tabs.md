@@ -3,11 +3,11 @@ Instead of syncing a local bookmarks folder, Floccus can optionally sync your op
 1. Create a new profile with the sync method of your choice
 2. In the profile settings, select Tabs instead of a local folder to sync
 
-By default, floccus' sync strategy is set to "Always merge local changes with changes of other browsers". This feature is still slightly experimental as it sometimes causes tabs to duplicate. Changing the strategy may alleviate these issues, as shown below.
+By default, floccus' sync strategy is set to "Always merge local changes with changes from other browsers". This feature is still slightly experimental as it sometimes causes tabs to duplicate. Changing the strategy may alleviate these issues, as shown below.
 
 ## Auto-push
 
-You can enable Auto-sync but set sync strategy to "Always upload local changes and undo changes from other browser". This will automatically push your currently open tabs to the server. Whenever you need the tabs on a different browser, or after a crash, you can click "Pull down once" to get the tabs back.
+You can enable Auto-sync but set sync strategy to "Always upload local changes and undo changes from other browsers". This will automatically push your currently open tabs to the server. Whenever you need the tabs on a different browser, or after a crash, you can click "Pull down once" to get the tabs back.
 
 ## Manual up- and download
 

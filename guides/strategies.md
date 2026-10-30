@@ -15,4 +15,4 @@ Sometimes you want to have one device as a main device and other devices only as
 ## Temporary one-way
 
 Occasionally you only want to temporarily override changes from other devices. For this you can use 'Push up once' in the floccus dropdown.
-In order to undo local changes you can do use 'Pull down once' in the floccus dropdown to revert all your local changes with the latest server state.
+In order to undo local changes you can use 'Pull down once' in the floccus dropdown to revert all your local changes with the latest server state.

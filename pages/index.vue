@@ -149,7 +149,7 @@
             <v-tooltip bottom :max-width="250">
               <template #activator="{ on, attrs }">
                 <span v-bind="attrs" v-on="on"
-                  ><a href="https://drive.google.com">Dropbox</a
+                  ><a href="https://www.dropbox.com">Dropbox</a
                   ><v-icon dense>mdi-help-circle-outline</v-icon></span
                 >
               </template>
