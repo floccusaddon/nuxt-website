@@ -45,6 +45,7 @@
 import overview from '~/guides/overview.md'
 import install from '~/guides/install-browser.md'
 import installAndroid from '~/guides/install-android.md'
+import installIos from '~/guides/install-ios.md'
 import syncNcBookmarks from '~/guides/sync-nextcloud-bookmarks.md'
 import syncLinkwarden from '~/guides/sync-linkwarden.md'
 import syncKarakeep from '~/guides/sync-karakeep.md'
@@ -74,6 +75,11 @@ export default {
         {
           title: 'Install on Android',
           content: installAndroid,
+          show: false,
+        },
+        {
+          title: 'Install on iOS',
+          content: installIos,
           show: false,
         },
         {
