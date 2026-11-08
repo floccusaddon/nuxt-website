@@ -85,7 +85,7 @@ Just like on Android, the app does not sync your bookmarks with Safari or other 
         {
           question:
             'Does floccus sync my bookmarks with end-to-end encryption?',
-          answer: `Floccus offers multiple sync methods. Only the WebDAV, Google Drive and Dropbox options allow setting an encryption password to sync with end-to-end encryption. Syncing via Nextcloud Bookmarks, Linkwarden, Karakeep or Git is not possible in end-to-end encrypted fashion with floccus.`,
+          answer: `Floccus offers multiple sync methods. Only the WebDAV, S3, Google Drive and Dropbox options allow setting an encryption password to sync with end-to-end encryption. Syncing via Nextcloud Bookmarks, Linkwarden, Karakeep or Git is not possible in end-to-end encrypted fashion with floccus.`,
         },
         {
           question: 'Does floccus support bookmarks tags in Firefox?',
@@ -102,14 +102,14 @@ Just like on Android, the app does not sync your bookmarks with Safari or other 
         {
           question: 'How are browser-internal URLs treated?',
           answer:
-            'Browser-internal URLs like `chrome://` URLs are only synced with WebDAV, Google Drive, Dropbox or Git and only with chrome-based browsers.',
+            'Browser-internal URLs like `chrome://` URLs are only synced with WebDAV, S3, Google Drive, Dropbox or Git and only with chrome-based browsers.',
         },
         {
           question: 'How are non-HTTP URLs treated?',
           answer:
             'Nextcloud Bookmarks currently only supports `http(s):`, `ftp:` and `javascript:` links, URLs with any other schemes are ignored and left alone, when syncing via Nextcloud Bookmarks.\n' +
             '\n' +
-            'When syncing via WebDAV, Google Drive, Dropbox or Git, `http(s):`, `ftp:`, `data:`, `file:`, `javascript:` and browser-internal links (e.g. `chrome:`, `edge:`, `about:`) are supported.' +
+            'When syncing via WebDAV, S3, Google Drive, Dropbox or Git, `http(s):`, `ftp:`, `data:`, `file:`, `javascript:` and browser-internal links (e.g. `chrome:`, `edge:`, `about:`) are supported.' +
             '\n\n' +
             'When syncing via Linkwarden, only `http(s):`, `ftp:` and `javascript:` links are supported. When syncing via Karakeep, only `http(s):` links are supported.',
         },
@@ -131,6 +131,8 @@ For Linkwarden and Karakeep you need to generate a dedicated access token (API k
 For Git you can use your password, but it is recommended to use a dedicated access token from your Git hosting provider.
 
 For WebDAV, only a normal password can be used.
+
+For S3 you need an access key ID and secret access key. It is recommended to create a dedicated access key that can only access the bucket you use for floccus.
 
 Floccus only stores the data you provide in your browser and doesn't send them anywhere. The aforementioned access credentials are thus as secure as your browser, by default.`,
         },
@@ -191,7 +193,7 @@ If the lock isn't released, floccus should override it after 15 minutes (when sy
         {
           question:
             "When logging in with Google, I get the following error: 'You can't sign in to this app because it doesn't comply with Google's OAuth 2.0 policy for keeping apps secure.' What can I do?",
-          answer: `You're likely using a browser that is not supported by Google's OAuth login service, e.g. Ungoogled Chromium is such a browser. Unfortunately, you cannot work around this by exporting a profile from a supported browser, since Google logins cannot be transferred between devices and imported Google Drive profiles need you to log in again. Please use a different sync method in this browser, e.g. Dropbox, WebDAV or Git.`,
+          answer: `You're likely using a browser that is not supported by Google's OAuth login service, e.g. Ungoogled Chromium is such a browser. Unfortunately, you cannot work around this by exporting a profile from a supported browser, since Google logins cannot be transferred between devices and imported Google Drive profiles need you to log in again. Please use a different sync method in this browser, e.g. Dropbox, WebDAV, S3 or Git.`,
         },
         {
           question:

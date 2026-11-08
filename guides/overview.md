@@ -9,6 +9,7 @@ If you prefer Dropbox, you can store your bookmarks there instead, also optional
 
 If you don't have Google Drive or Dropbox or don't want to use them, using WebDAV may be an option. There are many cloud storage services out there that support WebDAV.
 Checkout [this list the Cryptomator Community created](https://community.cryptomator.org/t/webdav-urls-of-common-cloud-storage-services/75) to see if your provider offers WebDAV.
+If you have access to an S3 bucket, e.g. on Amazon S3, Cloudflare R2, Backblaze B2 or your own MinIO or Garage server, you can store your bookmarks there, also optionally encrypted.
 If you'd rather keep your bookmarks in a Git repository, e.g. on GitHub, GitLab or Gitea, you can sync via Git as well.
 
 If you want a very easy solution, you can sync your bookmarks via Linkwarden. Linkwarden is an Open Source web app that manages your bookmarks. You can host it yourself on your own server, but
