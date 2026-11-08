@@ -52,6 +52,7 @@ import syncKarakeep from '~/guides/sync-karakeep.md'
 import syncWebdav from '~/guides/sync-webdav.md'
 import syncGDrive from '~/guides/sync-googledrive.md'
 import syncDropbox from '~/guides/sync-dropbox.md'
+import syncS3 from '~/guides/sync-s3.md'
 import syncGit from '~/guides/sync-git.md'
 import strategies from '~/guides/strategies.md'
 import tabs from '~/guides/tabs.md'
@@ -110,6 +111,11 @@ export default {
         {
           title: 'Sync via Dropbox',
           content: syncDropbox,
+          show: false,
+        },
+        {
+          title: 'Sync via S3',
+          content: syncS3,
           show: false,
         },
         {

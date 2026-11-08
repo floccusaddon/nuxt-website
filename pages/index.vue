@@ -35,7 +35,7 @@
           colored-border
           outlined
         >
-          <strong>News</strong> Git sync support comes to floccus on Android and iOS with v5.11!
+          <strong>New in v5.13</strong> Floccus can now sync with S3 Buckets
         </v-alert>
       </v-row>
       <v-row class="d-block d-sm-flex">
@@ -115,7 +115,7 @@
                 Gitea, for example.</span
               >
             </v-tooltip>
-            or
+            ,
             <v-tooltip bottom :max-width="250">
               <template #activator="{ on, attrs }">
                 <span v-bind="attrs" v-on="on"
@@ -128,6 +128,22 @@
                 and move documents on a server. Many cloud storage providers
                 support using WebDAV to access files. You can also easily host
                 your own WebDAV server.</span
+              >
+            </v-tooltip>
+            or
+            <v-tooltip bottom :max-width="250">
+              <template #activator="{ on, attrs }">
+                <span v-bind="attrs" v-on="on"
+                  ><a href="https://en.wikipedia.org/wiki/Amazon_S3">S3</a
+                  ><v-icon dense>mdi-help-circle-outline</v-icon></span
+                >
+              </template>
+              <span
+                >S3 is a scalable object storage service provided by Amazon Web
+                Services (AWS). It allows users to store and retrieve any amount
+                of data at any time from anywhere on the web. Many cloud storage
+                providers offer S3-compatible storage, and you can also host
+                your own S3-compatible server.</span
               >
             </v-tooltip>
             server for easy self-hosting or simply via
@@ -258,6 +274,24 @@
                   <a
                     href="https://github.com/floccusaddon/floccus/releases/tag/v3.0.0"
                     >v3.0.0</a
+                  >
+                </td>
+                <td align="left">✅</td>
+                <td align="left">✅</td>
+                <td align="left">✅</td>
+                <td align="left">✅</td>
+                <td align="left">✅</td>
+                <td align="left">(✅)</td>
+                <td align="left">✅</td>
+                <td align="left">✅</td>
+              </tr>
+              <tr>
+                <td align="left">S3 Bucket</td>
+                <td align="left">xbel, html</td>
+                <td align="left">
+                  <a
+                    href="https://github.com/floccusaddon/floccus/releases/tag/v5.13.0"
+                    >v5.13.0</a
                   >
                 </td>
                 <td align="left">✅</td>
