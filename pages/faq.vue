@@ -114,6 +114,12 @@ Just like on Android, the app does not sync your bookmarks with Safari or other 
             'When syncing via Linkwarden, only `http(s):`, `ftp:` and `javascript:` links are supported. When syncing via Karakeep, only `http(s):` links are supported.',
         },
         {
+          question:
+            'Can floccus tell me about changes instead of syncing automatically?',
+          answer:
+            "Yes. Since v5.13, you can enable 'Only notify me about changes' in the sync behavior settings of a profile. Floccus will then only check for changes instead of syncing. When there is something to sync, the profile shows how many changes are waiting and the floccus icon gets a yellow badge, and you decide when to sync. Optionally, floccus can also show a system notification. This option is only available in the browser extension, not in the Android and iOS app. See the guide on choosing a sync strategy for more details.",
+        },
+        {
           question: 'Does floccus track usage data at all?',
           answer:
             "No. By default floccus does not track you in any way. The only network traffic initiated by floccus is syncing your bookmarks to the server of your choosing. That's it.",
