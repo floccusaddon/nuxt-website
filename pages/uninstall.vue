@@ -3,7 +3,7 @@
     <v-row justify="center" align="center">
       <v-col cols="10" sm="8">
         <v-img src="/undraw_heartbroken.svg" max-width="400"/>
-        <h1 class="headline text-h2">We're sad to see you&nbsp;go!</h1>
+        <h1 class="fl-page-title">We're sad to see you&nbsp;go!</h1>
       </v-col>
     </v-row>
   </div>

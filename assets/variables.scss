@@ -1,4 +1,14 @@
 // Ref: https://github.com/nuxt-community/vuetify-module#customvariables
 //
-// The variables you want to modify
-// $font-size-root: 20px;
+// Note: these are only applied in production builds (treeShake is enabled
+// there), so `nuxt dev` may look slightly different from `nuxt generate`.
+
+$body-font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
+$heading-font-family: $body-font-family;
+
+$border-radius-root: 10px;
+
+// Buttons: sentence case instead of Material's uppercase + letter spacing
+$btn-text-transform: none;
+$btn-letter-spacing: 0;
+$btn-font-weight: 600;

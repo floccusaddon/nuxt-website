@@ -2,7 +2,7 @@
   <div>
     <v-row justify="center" align="center">
       <v-col cols="10" sm="8">
-        <h1 class="headline">Frequently Asked Questions</h1>
+        <h1 class="fl-page-title">Frequently Asked Questions</h1>
         <v-text-field
           append-icon="mdi-magnify"
           class="mt-2 mb-4"

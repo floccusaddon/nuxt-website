@@ -2,7 +2,7 @@
   <div>
     <v-row justify="center" align="center">
       <v-col cols="10" sm="8">
-        <h1 class="headline">License</h1>
+        <h1 class="fl-page-title">License</h1>
       </v-col>
     </v-row>
     <v-row justify="center" align="center">

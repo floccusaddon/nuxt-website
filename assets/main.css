@@ -1,0 +1,129 @@
+/* Shared styles for floccus.org */
+
+:root {
+  --fl-ink: #0f1e36;
+  --fl-muted: #5b6b82;
+  --fl-border: #e3e9f2;
+  --fl-soft: #f4f7fb;
+  --fl-blue: #1976d2;
+  --fl-blue-soft: #e3f0fd;
+  --fl-navy: #0d1b2e;
+}
+
+.v-application {
+  color: var(--fl-ink);
+  background: #fff;
+}
+
+/* Page container used by all pages */
+.fl-page {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 4px;
+}
+
+.fl-narrow {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+/* Section headings */
+.fl-section {
+  margin-top: 96px;
+}
+
+.fl-eyebrow {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--fl-blue);
+  margin-bottom: 8px;
+}
+
+.fl-h1 {
+  font-size: clamp(2.4rem, 6vw, 4.2rem);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  color: var(--fl-ink);
+}
+
+.fl-h2 {
+  font-size: clamp(1.7rem, 3.4vw, 2.4rem);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--fl-ink);
+  margin-bottom: 12px;
+}
+
+.fl-lead {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--fl-muted);
+}
+
+.fl-page-title {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  margin: 24px 0 8px;
+}
+
+/* Cards */
+.fl-card {
+  background: #fff;
+  border: 1px solid var(--fl-border);
+  border-radius: 18px;
+  transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s;
+}
+
+.v-application a.fl-card,
+.fl-card-hover {
+  text-decoration: none;
+  color: var(--fl-ink);
+}
+
+a.fl-card:hover,
+.fl-card-hover:hover {
+  box-shadow: 0 14px 34px rgb(15 30 54 / 10%);
+  transform: translateY(-2px);
+  border-color: #cfdcec;
+}
+
+.fl-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.fl-grid-2 {
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+}
+
+.fl-grid-3 {
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+.fl-grid-4 {
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+}
+
+@media (max-width: 600px) {
+  .fl-section {
+    margin-top: 64px;
+  }
+
+  .fl-grid-2,
+  .fl-grid-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Links in running text */
+.v-application .fl-prose a {
+  color: var(--fl-blue);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}

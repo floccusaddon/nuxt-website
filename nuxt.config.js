@@ -44,7 +44,7 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
+  css: ['~/assets/main.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
@@ -70,15 +70,24 @@ export default {
   markdownit: {
     preset: 'default',
     linkify: true,
-    breaks: true,
+    breaks: false,
     runtime: true,
   },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
+    defaultAssets: {
+      font: { family: 'Inter' },
+      icons: 'mdi',
+    },
     theme: {
       dark: false,
+      themes: {
+        light: {
+          primary: '#1976D2',
+        },
+      },
     },
   },
 
