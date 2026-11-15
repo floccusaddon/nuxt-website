@@ -17,7 +17,7 @@
       >
       </div>
       <v-btn color="primary" outlined text class="mr-4" :to="{ name: 'download' }">Download</v-btn>
-      <v-btn outlined text :to="{ name: 'donate' }">Donate</v-btn>
+      <v-btn outlined text :to="{ name: 'donate', query: { from: 'site' } }">Donate</v-btn>
     </v-app-bar>
     <v-main>
       <v-container>

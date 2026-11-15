@@ -418,7 +418,7 @@
             />
           </v-card>
           <p>
-            <v-btn class="primary" href="/donate">Write your review</v-btn>
+            <v-btn class="primary" :to="{ name: 'donate', query: { from: 'site' } }">Write your review</v-btn>
           </p>
         </v-col>
       </v-row>
@@ -431,7 +431,7 @@
             by bit.
           </p>
           <p>
-            <v-btn class="primary" href="/donate">Give something back</v-btn>
+            <v-btn class="primary" :to="{ name: 'donate', query: { from: 'site' } }">Give something back</v-btn>
           </p>
         </v-col>
         <v-col class="col-12 col-sm-6">

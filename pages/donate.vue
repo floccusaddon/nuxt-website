@@ -1,7 +1,38 @@
 <template>
   <div>
     <v-row justify="center" align="center">
-      <v-col class="col-8 col-md-4 flex-column d-flex justify-center">
+      <v-col
+        v-if="fromSite"
+        class="col-8 col-md-4 flex-column d-flex justify-center"
+      >
+        <h1 class="headline">Support floccus</h1>
+        <p>&nbsp;</p>
+        <p class="font-italic" style="font-size: 1.2em">
+          Thanks for considering supporting <strong>floccus</strong>, the open
+          source <strong>bookmark syncing</strong> tool!
+        </p>
+        <p class="font-italic" style="font-size: 1.2em">
+          I am <strong>Marcel</strong>, the creator of floccus. I'm an employee
+          at Nextcloud but I currently spend one day of my work week, every
+          week, to improve floccus to create an open source bookmark syncing
+          solution for everyone.
+        </p>
+        <p class="font-italic" style="font-size: 1.2em">
+          This work on floccus is fuelled by a
+          <strong>voluntary subscription model</strong>: Floccus is free for
+          everyone, and roughly 2% of the people that use it decide to help
+          support its development financially. If you find floccus useful and
+          you can spare a few coins each month without hardship, a
+          <strong>donation</strong> is very much appreciated.
+        </p>
+        <p class="font-italic" style="font-size: 1.2em">
+          Not in a position to donate? No worries! Giving floccus
+          <strong>a review</strong> or <strong>rating</strong> on the addon
+          store of your choice helps a lot as well. <strong>Thank you!</strong>
+          💙
+        </p>
+      </v-col>
+      <v-col v-else class="col-8 col-md-4 flex-column d-flex justify-center">
         <h1 class="headline">Hi there, sorry to bug you…</h1>
         <p>&nbsp;</p>
         <p class="font-italic" style="font-size: 1.2em">
@@ -196,6 +227,11 @@ export default {
     return {
       showWero: false,
       showSepa: false,
+      // The floccus extension opens /donate/ without query params once every
+      // half year. Links on this website add ?from=site, so we can show a
+      // text that doesn't assume the visitor was sent here by the extension.
+      // Evaluated on mount to avoid hydration mismatches on the static build.
+      fromSite: false,
     }
   },
   head: {
@@ -218,6 +254,14 @@ export default {
         content: 'Support Floccus - Floccus bookmarks sync',
       },
     ],
+  },
+  watch: {
+    '$route.query.from'(from) {
+      this.fromSite = from === 'site'
+    },
+  },
+  mounted() {
+    this.fromSite = this.$route.query.from === 'site'
   },
 }
 </script>
