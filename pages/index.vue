@@ -17,7 +17,7 @@
               color="ma-1 purple"
               class="white--text"
               target="_blank"
-              href="https://youtube.com/watch?v=DFE3MFYT1jM"
+              href="https://youtube.com/watch?v=Ln2mR-lSxLs"
               >Watch the intro</v-btn
             >
             <v-btn class="primary ma-1" :to="{ name: 'download' }"
