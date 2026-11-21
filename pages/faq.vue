@@ -70,17 +70,21 @@ export default {
           question: 'How can I access my bookmarks on my Android phone?',
           answer: `A Floccus Android app is available [from the Downloads page](/download).
 
-For technical reasons, the app does not sync your bookmarks with your mobile browser, but makes them available directly in the app itself instead. You can share links from your browser or other apps to the floccus app for bookmarking and open your bookmarks in your favorite browser.`,
+For technical reasons, the app does not sync your bookmarks with your mobile browser, but makes them available directly in the app itself instead. You can share links from your browser or other apps to the floccus app for bookmarking and open your bookmarks in your favorite browser.
+
+Alternatively you can install the floccus browser extension in your mobile browser, if it supports extensions. We know of the following browsers that support floccus on Android: WebLibre (Gecko-based), Microsoft Edge for Android Canary, Cromite Browser, Titanium Browser.`,
         },
         {
           question: 'How can I access my bookmarks on my iPhone or iPad?',
           answer: `A Floccus iOS app is available [from the App Store](https://apps.apple.com/us/app/floccus/id1626998357), see also the [Downloads page](/download).
 
-Just like on Android, the app does not sync your bookmarks with Safari or other mobile browsers, but makes them available directly in the app itself instead. You can share links from Safari or other apps to the floccus app for bookmarking and open your bookmarks in your favorite browser.`,
+Just like on Android, the app does not sync your bookmarks with Safari or other mobile browsers, but makes them available directly in the app itself instead. You can share links from Safari or other apps to the floccus app for bookmarking and open your bookmarks in your favorite browser.
+
+Alternatively you can install the floccus browser extension in your mobile browser, if it supports extensions. We know of the following browsers that support floccus on iOS: Orion.`,
         },
         {
           question: 'When will floccus be available for Firefox on Android?',
-          answer: `Firefox for Android is making strides to support more addons. Floccus requires specific bookmarks APIs, however, which have not been implemented in Firefox for Android yet. So, we still wait, but the waiting won't be long.`,
+          answer: `Firefox for Android is making strides to support more addons. Floccus requires specific bookmarks APIs, however, which have not been implemented in Firefox for Android yet. So, we still wait, but the waiting won't be long. In the meantime you may want to check out the WebLibre Browser project which is building an Android browser based on Gecko.`,
         },
         {
           question:
