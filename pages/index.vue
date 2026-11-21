@@ -127,7 +127,7 @@
       <p class="fm-footnote">
         <em>Mobile app</em> means the feature is available in the floccus
         mobile app, which syncs to a folder inside the app, not to mobile
-        browsers. Floccus support across mobile browsers is currently sparse.
+        browsers. Floccus support across mobile browsers is currently sparse. See the <nuxt-link to="/faq">FAQ</nuxt-link> for details.
       </p>
     </section>
 
