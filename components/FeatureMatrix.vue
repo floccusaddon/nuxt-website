@@ -73,7 +73,7 @@ export default {
       ],
       rows: [
         { name: 'Nextcloud Bookmarks', storage: 'App', since: 'v3.1.0', values: ['y', 'y', 'y', 'n', 'n', 'n', 'y', 'y'] },
-        { name: 'Linkwarden', storage: 'App', since: 'v5.3.0', values: ['y', 'y', 'y', 'n', 'n', 'n', 'n', 'y'] },
+        { name: 'Linkwarden', storage: 'App', since: 'v5.3.0', values: ['y', 'y', 'y', 'n', 'n', 'n', 'y', 'y'] },
         { name: 'Karakeep', storage: 'App', since: 'v5.6.0', values: ['y', 'n', 'n', 'n', 'n', 'n', 'n', 'y'] },
         { name: 'WebDAV', storage: 'XBEL, HTML', since: 'v3.0.0', values: ['y', 'y', 'y', 'y', 'y', 'o', 'y', 'y'] },
         { name: 'S3 bucket', storage: 'XBEL, HTML', since: 'v5.13.0', values: ['y', 'y', 'y', 'y', 'y', 'o', 'y', 'y'] },
