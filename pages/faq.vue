@@ -63,8 +63,7 @@ export default {
       faqs: [
         {
           question: 'Which browsers are supported by floccus?',
-          answer:
-            'Currently floccus supports Chromium, Google Chrome, Mozilla Firefox, Microsoft Edge, Opera, Brave, Vivaldi and Orion. Safari is currently not supported, but on iPhone and iPad you can use the floccus iOS app.',
+          answer: `Currently floccus supports Chromium, Google Chrome, Mozilla Firefox, Microsoft Edge, Opera, Brave, Vivaldi and Orion. Safari is currently not supported, but on iPhone and iPad you can use the floccus iOS app or Orion browser. The following browsers support floccus on Android: WebLibre (Gecko-based), Cromite Browser, Titanium Browser and Microsoft Edge for Android Canary.`,
         },
         {
           question: 'How can I access my bookmarks on my Android phone?',
